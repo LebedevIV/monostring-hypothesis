@@ -1,0 +1,180 @@
+╔═════════════════════════════════════════════════════════════════╗
+║  SBE TEST SUITE v3                                        ║
+║  + Null Bell control  + Coxeter frequencies  + Fine scan   ║
+╚═════════════════════════════════════════════════════════════════╝
+
+  Standard ω: [1.41421356 1.73205081 2.23606798 2.64575131 3.31662479 3.60555128]
+  Coxeter ω:  [0.51763809 1.73205081 1.93185165 1.93185165 1.73205081 0.51763809]
+  Note: Coxeter has only 3 unique values!
+
+=================================================================
+  FREQUENCY SET: STANDARD
+=================================================================
+
+  [1] Trajectory (N=15000, κ=0.5)...
+      D_corr=4.784, λ_max=0.1290 (CHAOTIC)
+      Time: 0.9s
+
+  [2] Resonance graph...
+      ε=1.306, edges=317,664, deg=44.4
+      Time: 2.4s
+
+  [3] Null model...
+      D_corr(null)=5.724, deg=38.8
+      Time: 2.7s
+
+  [4] Dimension measurement...
+      SBE:  D_reg=3.92, D_micro=3.98
+      NULL: D_reg=4.63, D_micro=4.93
+      Time: 6.8s
+
+  [5] Ollivier-Ricci curvature...
+        100/200
+        200/200
+        100/100
+      SBE:  <κ>=-0.0433, corr=0.408
+      NULL: <κ>=-0.2699, corr=0.120
+      Time: 2404.9s
+
+  [6] Bell test (SBE + NULL control)...
+      SBE:  |S|=2.4470, C=1.0000
+      NULL: |S|=2.3718, C=1.0000
+      Bell test GENERIC (both violate)
+      Time: 4.2s
+
+  [7] Dirac spectrum...
+      Zero modes: 1, gap: 0.9538
+      Ratios: [1.         1.13342277 1.1591711  1.17768283 1.18854904]
+      Time: 12.2s
+
+  ────────────────────────────────────────────────────────────
+  VERDICT for STANDARD frequencies:
+    ✓ D_corr < 5.5                                  4.78
+    ✓ D_reg(SBE) < D_reg(null)-0.3                  3.92 vs 4.63
+    ✓ corr(κ,ρ) > 0.3                               0.408
+    ✓ corr(SBE) > corr(null)                        0.408 vs 0.120
+    ✗ Bell INFORMATIVE                              SBE=2.45, null=2.37
+  Score: 4/5
+
+=================================================================
+  FREQUENCY SET: COXETER
+=================================================================
+
+  [1] Trajectory (N=15000, κ=0.5)...
+      D_corr=2.275, λ_max=0.0464 (CHAOTIC)
+      Time: 0.8s
+
+  [2] Resonance graph...
+      ε=0.349, edges=266,407, deg=37.5
+      Time: 1.6s
+
+  [3] Null model...
+      D_corr(null)=5.761, deg=43.2
+      Time: 3.0s
+
+  [4] Dimension measurement...
+      SBE:  D_reg=2.61, D_micro=2.55
+      NULL: D_reg=4.65, D_micro=4.94
+      Time: 5.7s
+
+  [5] Ollivier-Ricci curvature...
+        100/200
+        200/200
+        100/100
+      SBE:  <κ>=0.1239, corr=0.206
+      NULL: <κ>=-0.2222, corr=0.266
+      Time: 1178.4s
+
+  [6] Bell test (SBE + NULL control)...
+      SBE:  |S|=2.3799, C=1.0000
+      NULL: |S|=2.3957, C=1.0000
+      Bell test GENERIC (both violate)
+      Time: 4.9s
+
+  [7] Dirac spectrum...
+      Zero modes: 1, gap: 0.1043
+      Ratios: [1.         1.12196147 1.13948106 1.30627463 1.41297377]
+      Time: 19.5s
+
+  ────────────────────────────────────────────────────────────
+  VERDICT for COXETER frequencies:
+    ✓ D_corr < 5.5                                  2.27
+    ✓ D_reg(SBE) < D_reg(null)-0.3                  2.61 vs 4.65
+    ✗ corr(κ,ρ) > 0.3                               0.206
+    ✗ corr(SBE) > corr(null)                        0.206 vs 0.266
+    ✗ Bell INFORMATIVE                              SBE=2.38, null=2.40
+  Score: 2/5
+
+=================================================================
+  FINE PHASE DIAGRAM (Standard frequencies)
+=================================================================
+    κ=0.00: D_corr=5.73, D_reg=4.10, λ=0.000
+    κ=0.05: D_corr=5.67, D_reg=4.29, λ=0.000
+    κ=0.10: D_corr=5.64, D_reg=4.33, λ=0.000
+    κ=0.15: D_corr=5.65, D_reg=4.37, λ=0.000
+    κ=0.20: D_corr=5.53, D_reg=4.14, λ=0.000
+    κ=0.25: D_corr=4.61, D_reg=3.95, λ=0.000
+    κ=0.30: D_corr=5.25, D_reg=4.08, λ=0.003
+    κ=0.35: D_corr=5.17, D_reg=3.72, λ=0.017
+    κ=0.40: D_corr=4.93, D_reg=3.75, λ=0.046
+    κ=0.45: D_corr=4.89, D_reg=3.67, λ=0.091
+    κ=0.50: D_corr=4.80, D_reg=3.89, λ=0.122
+    κ=0.55: D_corr=4.79, D_reg=3.83, λ=0.162
+    κ=0.60: D_corr=4.84, D_reg=3.88, λ=0.220
+    κ=0.65: D_corr=4.76, D_reg=3.97, λ=0.284
+    κ=0.70: D_corr=4.74, D_reg=3.99, λ=0.335
+    κ=0.75: D_corr=4.73, D_reg=4.04, λ=0.374
+    κ=0.80: D_corr=4.78, D_reg=4.07, λ=0.430
+    κ=0.85: D_corr=4.74, D_reg=4.09, λ=0.466
+    κ=0.90: D_corr=4.84, D_reg=3.98, λ=0.507
+    κ=0.95: D_corr=4.88, D_reg=3.84, λ=0.534
+    κ=1.00: D_corr=4.92, D_reg=3.99, λ=0.577
+    κ=1.05: D_corr=4.98, D_reg=4.13, λ=0.608
+    κ=1.10: D_corr=5.05, D_reg=4.04, λ=0.636
+    κ=1.15: D_corr=5.16, D_reg=4.23, λ=0.659
+    κ=1.20: D_corr=5.17, D_reg=4.32, λ=0.691
+    κ=1.25: D_corr=5.25, D_reg=4.07, λ=0.713
+    κ=1.30: D_corr=5.31, D_reg=4.16, λ=0.746
+    κ=1.35: D_corr=5.31, D_reg=4.24, λ=0.774
+    κ=1.40: D_corr=5.37, D_reg=4.15, λ=0.804
+    κ=1.45: D_corr=5.47, D_reg=4.28, λ=0.838
+    κ=1.50: D_corr=5.51, D_reg=4.20, λ=0.867
+
+=================================================================
+  FINE PHASE DIAGRAM (Coxeter frequencies)
+=================================================================
+    κ=0.00: D_corr=2.99, D_reg=3.09, λ=0.000
+    κ=0.05: D_corr=4.55, D_reg=3.65, λ=-0.000
+    κ=0.10: D_corr=5.30, D_reg=4.19, λ=-0.000
+    κ=0.15: D_corr=5.18, D_reg=4.09, λ=0.000
+    κ=0.20: D_corr=5.06, D_reg=4.12, λ=0.000
+    κ=0.25: D_corr=3.98, D_reg=3.08, λ=0.004
+    κ=0.30: D_corr=3.52, D_reg=3.07, λ=0.002
+    κ=0.35: D_corr=2.93, D_reg=2.79, λ=0.006
+    κ=0.40: D_corr=2.44, D_reg=2.58, λ=0.017
+    κ=0.45: D_corr=2.06, D_reg=2.19, λ=0.012
+    κ=0.50: D_corr=2.22, D_reg=2.75, λ=0.052
+    κ=0.55: D_corr=2.50, D_reg=2.54, λ=0.090
+    κ=0.60: D_corr=2.50, D_reg=2.75, λ=0.126
+    κ=0.65: D_corr=2.53, D_reg=2.69, λ=0.170
+    κ=0.70: D_corr=3.69, D_reg=3.28, λ=0.248
+    κ=0.75: D_corr=3.99, D_reg=3.77, λ=0.332
+    κ=0.80: D_corr=4.18, D_reg=4.00, λ=0.370
+    κ=0.85: D_corr=4.27, D_reg=3.71, λ=0.431
+    κ=0.90: D_corr=4.43, D_reg=3.85, λ=0.456
+    κ=0.95: D_corr=4.42, D_reg=3.73, λ=0.485
+    κ=1.00: D_corr=4.48, D_reg=3.85, λ=0.520
+    κ=1.05: D_corr=4.62, D_reg=3.94, λ=0.545
+    κ=1.10: D_corr=4.60, D_reg=4.03, λ=0.576
+    κ=1.15: D_corr=4.68, D_reg=3.87, λ=0.607
+    κ=1.20: D_corr=4.69, D_reg=4.01, λ=0.637
+    κ=1.25: D_corr=4.82, D_reg=3.97, λ=0.668
+    κ=1.30: D_corr=4.92, D_reg=4.04, λ=0.692
+    κ=1.35: D_corr=4.94, D_reg=3.91, λ=0.732
+    κ=1.40: D_corr=5.08, D_reg=4.17, λ=0.757
+    κ=1.45: D_corr=5.19, D_reg=4.19, λ=0.778
+    κ=1.50: D_corr=5.28, D_reg=4.26, λ=0.810
+qt.qpa.wayland: Wayland does not support QWindow::requestActivate()
+kf.kio.filewidgets.kfilefiltercombo: Could not find filter "*.png|Portable Network Graphics"
+inotify_add_watch(/var/lib/samba/usershares) failed: (Permission denied)
+kf.windowsystem: Could not find any platform plugin
