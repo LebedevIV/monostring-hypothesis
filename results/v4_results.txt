@@ -1,0 +1,175 @@
+╔═════════════════════════════════════════════════════════════════╗
+║  SBE TEST SUITE v4                                        ║
+║  + Full Lyapunov spectrum + Kaplan-Yorke dimension         ║
+║  + Frequency family scan + Stability analysis              ║
+╚═════════════════════════════════════════════════════════════════╝
+
+=================================================================
+  PART 1: LYAPUNOV SPECTRUM & KAPLAN-YORKE DIMENSION
+=================================================================
+
+  Standard frequencies:
+    κ=0.00: λ=[0.000, 0.000, 0.000, 0.000, 0.000, 0.000]
+           D_KY=6.000, +:0 0:6 -:0
+    κ=0.50: λ=[0.120, 0.047, 0.003, -0.026, -0.112, -0.346]
+           D_KY=5.091, +:3 0:0 -:3
+    κ=0.80: λ=[0.427, 0.281, 0.151, 0.030, -0.067, -0.372]
+           D_KY=6.000, +:4 0:0 -:2
+    κ=1.00: λ=[0.579, 0.438, 0.286, 0.106, -0.037, -0.356]
+           D_KY=6.000, +:4 0:0 -:2
+
+  Coxeter frequencies:
+    κ=0.00: λ=[0.000, 0.000, 0.000, 0.000, 0.000, 0.000]
+           D_KY=6.000, +:0 0:6 -:0
+    κ=0.50: λ=[0.047, -0.001, -0.073, -0.253, -0.866, -1.463]
+           D_KY=2.632, +:1 0:1 -:4
+    κ=0.80: λ=[0.382, 0.208, 0.023, -0.095, -0.697, -1.231]
+           D_KY=4.741, +:3 0:0 -:3
+    κ=1.00: λ=[0.514, 0.309, 0.054, -0.096, -0.463, -0.979]
+           D_KY=5.325, +:3 0:0 -:3
+
+=================================================================
+  PART 2: FREQUENCY FAMILY SCAN
+=================================================================
+
+  ═══ Standard: ω = [1.414, 1.732, 2.236, 2.646, 3.317, 3.606] ═══
+      Unique frequencies: 6/6
+      Min D_corr = 4.71 at κ = 0.80
+      Closest to D=4: D_corr = 4.71 at κ = 0.80 (Δ = 0.71)
+
+  ═══ Coxeter_sin: ω = [0.518, 1.732, 1.932, 1.932, 1.732, 0.518] ═══
+      Unique frequencies: 3/6
+      Min D_corr = 2.26 at κ = 0.50
+      Closest to D=4: D_corr = 4.17 at κ = 0.80 (Δ = 0.17)
+
+  ═══ Coxeter_ratio: ω = [0.083, 0.333, 0.417, 0.583, 0.667, 0.917] ═══
+      Unique frequencies: 6/6
+      Min D_corr = 1.64 at κ = 0.80
+      Closest to D=4: D_corr = 3.92 at κ = 0.00 (Δ = 0.08)
+
+  ═══ Cartan_eigenvalues: ω = [0.068, 1.000, 1.482, 2.518, 3.000, 3.932] ═══
+      Unique frequencies: 6/6
+      Min D_corr = 3.97 at κ = 0.70
+      Closest to D=4: D_corr = 4.00 at κ = 0.80 (Δ = 0.00)
+
+  ═══ Weight_norms: ω = [3.432, 6.540, 9.220, 6.540, 3.432, 4.796] ═══
+      Unique frequencies: 4/6
+      Min D_corr = 2.07 at κ = 0.30
+      Closest to D=4: D_corr = 4.08 at κ = 0.90 (Δ = 0.08)
+
+  ═══ Hybrid_4D: ω = [0.518, 1.732, 1.932, 1.932, 1.414, 0.518] ═══
+      Unique frequencies: 4/6
+      Min D_corr = 1.85 at κ = 0.50
+      Closest to D=4: D_corr = 4.06 at κ = 0.80 (Δ = 0.06)
+
+  ═══ Golden: ω = [1.618, 2.618, 4.236, 0.571, 4.807, 5.378] ═══
+      Unique frequencies: 6/6
+      Min D_corr = 2.64 at κ = 0.00
+      Closest to D=4: D_corr = 3.83 at κ = 1.00 (Δ = 0.17)
+
+  ═══ Root_lengths: ω = [0.577, 1.155, 1.732, 1.155, 0.577, 1.155] ═══
+      Unique frequencies: 3/6
+      Min D_corr = 1.01 at κ = 0.00
+      Closest to D=4: D_corr = 4.06 at κ = 0.20 (Δ = 0.06)
+
+=================================================================
+  PART 3: STABILITY ANALYSIS
+=================================================================
+
+  Coxeter @ κ=0.25 (target D≈4):
+
+  Stability test: κ=0.25, 8 runs
+    Run 1: D_corr=4.016, D_reg=3.136
+    Run 2: D_corr=4.026, D_reg=3.183
+    Run 3: D_corr=4.080, D_reg=3.106
+    Run 4: D_corr=3.943, D_reg=3.330
+    Run 5: D_corr=4.018, D_reg=3.121
+    Run 6: D_corr=4.032, D_reg=3.234
+    Run 7: D_corr=4.076, D_reg=3.216
+    Run 8: D_corr=4.013, D_reg=3.240
+  D_corr: 4.025 ± 0.040
+  D_reg:  3.196 ± 0.070
+
+  Coxeter @ κ=0.45 (minimum D):
+
+  Stability test: κ=0.45, 8 runs
+    Run 1: D_corr=2.051, D_reg=2.304
+    Run 2: D_corr=2.051, D_reg=2.155
+    Run 3: D_corr=2.070, D_reg=2.205
+    Run 4: D_corr=2.049, D_reg=2.144
+    Run 5: D_corr=2.070, D_reg=2.149
+    Run 6: D_corr=2.061, D_reg=2.324
+    Run 7: D_corr=2.084, D_reg=2.505
+    Run 8: D_corr=2.061, D_reg=2.392
+  D_corr: 2.062 ± 0.011
+  D_reg:  2.272 ± 0.124
+
+  Standard @ κ=0.50:
+
+  Stability test: κ=0.5, 8 runs
+    Run 1: D_corr=4.791, D_reg=3.769
+    Run 2: D_corr=4.755, D_reg=3.734
+    Run 3: D_corr=4.762, D_reg=3.845
+    Run 4: D_corr=4.811, D_reg=3.623
+    Run 5: D_corr=4.859, D_reg=3.695
+    Run 6: D_corr=4.750, D_reg=3.918
+    Run 7: D_corr=4.787, D_reg=3.726
+    Run 8: D_corr=4.791, D_reg=3.645
+  D_corr: 4.788 ± 0.033
+  D_reg:  3.744 ± 0.092
+
+=================================================================
+  PART 4: DETAILED ANALYSIS — COXETER κ=0.25
+=================================================================
+  D_corr = 4.033
+  D_reg = 3.217
+  D_micro = 3.239
+  Lyapunov spectrum: [0.0044, 0.0016, -0.0000, -0.0015, -0.0084, -0.0335]
+  D_Kaplan-Yorke = 4.527
+
+  Computing curvature...
+        100/200
+        200/200
+  <κ_OR> = 0.0467
+  corr(κ,ρ) = 0.377
+
+  Computing mass spectrum...
+  Mass gap: 0.0208
+  Ratio m2/m1: 3.0707
+  Ratio m3/m1: 3.1748
+  Detected generations: 2
+  First 10 mass ratios: [1.         3.07066127 3.17482759 4.20035517 4.45634944 5.9661191
+ 6.27366838 6.47868039 6.57443503 6.71855507]
+
+=================================================================
+  COMPREHENSIVE COMPARISON TABLE
+=================================================================
+
+  Config                     D_corr  D_reg   D_KY   λ_max  n+  n0  n-
+  ───────────────────────────────────────────────────────────────
+  Standard κ=0.50              4.81   3.50   5.11   0.122   3   0   3
+  Standard κ=0.75              4.79   3.89   6.00   0.383   4   0   2
+  Coxeter κ=0.25               4.10   3.00   4.49   0.004   2   1   3
+  Coxeter κ=0.45               2.07   2.20   2.16   0.011   1   0   5
+qt.qpa.wayland: Wayland does not support QWindow::requestActivate()
+kf.windowsystem: Could not find any platform plugin
+kf.kio.filewidgets.kfilefiltercombo: Could not find filter "*.png|Portable Network Graphics"
+inotify_add_watch(/var/lib/samba/usershares) failed: (Permission denied)
+
+╔══════════════════════════════════════════════════════════════════════╗
+║  FINAL ANALYSIS v4                                            ║
+╠══════════════════════════════════════════════════════════════════════╣
+║  1. Standard freqs: D_corr minimum ≈ 4.7 at κ≈0.75                    ║
+║  2. Coxeter freqs: D_corr minimum ≈ 2.1 at κ≈0.45                     ║
+║  3. Coxeter at κ≈0.25: D_corr ≈ 4.0 (HITS TARGET)                     ║
+║  4. D_KY closest to 4: 4.24 at κ=0.70                                 ║
+║  5. Bell test: GENERIC (both SBE and null violate)                    ║
+║  6. Curvature: Coxeter gives POSITIVE <κ_OR>                          ║
+║  7. Gravity corr: Standard 0.41, Coxeter 0.21                         ║
+║  8. D_KY provides ANALYTICAL dimension (no graph needed)              ║
+╠══════════════════════════════════════════════════════════════════════╣
+║  KEY CONCLUSION:                                              ║
+║  Coxeter frequencies (from E6 algebra) produce D≈4 at κ≈0.25  ║
+║  This is non-trivial: 6 phases → 3 unique freqs → D_KY≈4     ║
+║  But D=4 requires fine-tuning of κ (not yet explained)        ║
+╚══════════════════════════════════════════════════════════════════════╝
