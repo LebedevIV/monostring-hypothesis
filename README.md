@@ -1,5 +1,11 @@
 # The Monostring Hypothesis
 
+[![DOI: Paper](https://img.shields.io/badge/DOI-Paper%20(PDF)-blue.svg)](https://doi.org/10.5281/zenodo.18886048)
+[![DOI: Code](https://zenodo.org/badge/DOI/10.5281/zenodo.18890267.svg)](https://doi.org/10.5281/zenodo.18890267)
+
+*The full academic paper (PDF) is officially published and available on[Zenodo](https://doi.org/10.5281/zenodo.18886048).*
+*This repository contains the source code, raw data, and markdown drafts associated with the paper.*
+
 **Seven Computational Experiments That Killed One Path to Emergent Spacetime — and Opened Three Others**
 
 ## Overview
@@ -102,9 +108,11 @@ Three Others. GitHub/Zenodo. https://github.com/LebedevIV/monostring-hypothesis"
 
 ## Paper
 
-The full paper is available in paper/monostring_paper_en.md
-and on [Zenodo](https://zenodo.org/records/18886048)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18890267.svg)](https://doi.org/10.5281/zenodo.18890267)
+[![DOI: Paper](https://img.shields.io/badge/DOI-Paper%20(PDF)-blue.svg)](https://doi.org/10.5281/zenodo.18886048)
+[![DOI: Code](https://zenodo.org/badge/DOI/10.5281/zenodo.18890267.svg)](https://doi.org/10.5281/zenodo.18890267)
+
+*The full academic paper (PDF) is officially published and available on[Zenodo](https://doi.org/10.5281/zenodo.18886048).*
+*This repository contains the source code, raw data, and markdown drafts associated with the paper.*
 
 ## Discussion
 
