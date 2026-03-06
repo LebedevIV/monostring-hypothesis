@@ -103,7 +103,7 @@ Three Others. GitHub/Zenodo. https://github.com/LebedevIV/monostring-hypothesis"
 ## Paper
 
 The full paper is available in paper/monostring_paper_en.md
-and on [Zenodo (DOI: pending)](https://zenodo.org/records/18886048).
+and on [Zenodo](https://zenodo.org/records/18886048).
 
 ## Discussion
 
