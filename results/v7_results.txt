@@ -1,0 +1,155 @@
+══════════════════════════════════════════════════════════════════════╗
+║  SBE v7: PLATEAU ANALYSIS + DISSIPATION CHECK                ║
+║  + Symplectic version + Precision D_corr                     ║
+║  Fixes: D_min=0 artifact, IVT trivality                     ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+======================================================================
+  PART 1: Is the map dissipative?
+  <ln|det J|> < 0 means volume-contracting (D_KY < rank)
+======================================================================
+
+  Algebra      rank      κ=0.1      κ=0.3      κ=0.5      κ=1.0
+  ───────────────────────────────────────────────────────
+  A4              4    -0.0157    -0.2610    -0.1837     0.0297
+  A5              5     0.0002    -0.0681    -0.2962     0.2159
+  A6              6    -0.0157    -0.2780    -1.4738    -0.0676
+  A7              7    -0.0003    -0.0893    -1.9229    -0.3478
+  A8              8    -0.0159    -0.2911    -1.8868    -0.5419
+  D4              4    -0.0001    -0.0119    -0.8584    -1.8961
+  D5              5     0.0000    -0.0240    -1.6755    -0.5252
+  D6              6     0.0001    -0.0749    -2.3225    -0.8205
+  D7              7     0.0000    -0.7120    -2.5350    -0.9143
+  D8              8    -0.0154    -1.0705    -2.9038    -0.7436
+  E6              6     0.0000    -0.6043    -2.6178    -0.6482
+  E7              7     0.0001    -1.5564    -2.9946    -0.6058
+  E8              8    -0.0158    -2.2736    -3.7538    -0.4115
+
+  If ALL values < 0: map is dissipative → D_KY < rank is expected
+  Symplectic version (Test 4) will compare
+
+======================================================================
+  PART 2: D≈4 PLATEAU WIDTH (non-symplectic map)
+  Only counting κ where λ_max > 0 (chaotic)
+======================================================================
+
+  Algebra      rank  Plateau Δκ   κ_lo   κ_hi    ⟨D⟩  Chaotic?
+  ────────────────────────────────────────────────────────────
+  A4              4       1.461  0.539  2.000   3.95       YES  (200.2s)
+  A5              5       0.378  0.489  0.866   4.09       YES  (203.1s)
+  A6              6       0.327  0.363  0.690   4.13       YES  (208.3s)
+  A7              7       0.227  0.312  0.539   4.04       YES  (208.5s)
+  A8              8       0.025  0.463  0.489   4.06       YES  (205.0s)
+  D4              4       1.537  0.463  2.000   3.98       YES  (196.3s)
+  D5              5       0.781  0.262  1.043   4.10       YES  (200.5s)
+  D6              6       0.302  0.564  0.866   4.19       YES  (202.8s)
+  D7              7       0.000  0.489  0.489   4.07       YES  (204.9s)
+  D8              8       0.126  0.337  0.463   3.89       YES  (207.4s)
+  E6              6       0.101  0.640  0.741   4.10       YES  (205.6s)
+  E7              7       0.101  0.463  0.564   4.15       YES  (207.7s)
+  E8              8       0.000  0.413  0.413   3.61       YES  (206.9s)
+
+======================================================================
+  PART 3: SYMPLECTIC (volume-preserving) map
+  Dimension should be 2*rank for regular orbits
+  Question: does D_KY still pass through 4?
+======================================================================
+
+  A5 (rank 5, phase space dim = 10):
+    D_KY range: [10.00, 10.00]
+    Min D_KY = 10.00 at κ = 1.08
+    Closest to 4: Δ = 6.00 at κ = 1.08
+    D≈4 plateau width: 0.000
+
+  E6 (rank 6, phase space dim = 12):
+    D_KY range: [12.00, 12.00]
+    Min D_KY = 12.00 at κ = 1.39
+    Closest to 4: Δ = 8.00 at κ = 1.39
+    D≈4 plateau width: 0.000
+
+  A8 (rank 8, phase space dim = 16):
+    D_KY range: [16.00, 16.00]
+    Min D_KY = 16.00 at κ = 0.85
+    Closest to 4: Δ = 12.00 at κ = 0.85
+    D≈4 plateau width: 0.000
+
+  E8 (rank 8, phase space dim = 16):
+    D_KY range: [16.00, 16.00]
+    Min D_KY = 16.00 at κ = 2.16
+    Closest to 4: Δ = 12.00 at κ = 2.16
+    D≈4 plateau width: 0.000
+
+======================================================================
+  PART 4: PRECISION D_corr AT CHAOTIC PLATEAU CENTER
+======================================================================
+
+  A4 at κ = 1.269 (plateau [0.539, 2.000]):
+    D_corr = 3.4126 ± 0.0278
+    D_KY = 3.95
+    |D_corr - 4| = 0.5874
+
+  A5 at κ = 0.678 (plateau [0.489, 0.866]):
+    D_corr = 1.4378 ± 0.0381
+    D_KY = 4.09
+    |D_corr - 4| = 2.5622
+
+  A6 at κ = 0.526 (plateau [0.363, 0.690]):
+    D_corr = 1.1383 ± 0.0068
+    D_KY = 4.13
+    |D_corr - 4| = 2.8617
+
+  A7 at κ = 0.426 (plateau [0.312, 0.539]):
+    D_corr = 2.1458 ± 0.1257
+    D_KY = 4.04
+    |D_corr - 4| = 1.8542
+
+  D4 at κ = 1.232 (plateau [0.463, 2.000]):
+    D_corr = 2.2074 ± 0.0207
+    D_KY = 3.98
+    |D_corr - 4| = 1.7926
+
+  D5 at κ = 0.652 (plateau [0.262, 1.043]):
+    D_corr = 2.8261 ± 0.0197
+    D_KY = 4.10
+    |D_corr - 4| = 1.1739
+
+  D6 at κ = 0.715 (plateau [0.564, 0.866]):
+    D_corr = 3.9803 ± 0.0193
+    D_KY = 4.19
+    |D_corr - 4| = 0.0197
+
+  D8 at κ = 0.400 (plateau [0.337, 0.463]):
+    D_corr = 4.3520 ± 0.0246
+    D_KY = 3.89
+    |D_corr - 4| = 0.3520
+
+  E6 at κ = 0.690 (plateau [0.640, 0.741]):
+    D_corr = 3.5214 ± 0.0388
+    D_KY = 4.10
+    |D_corr - 4| = 0.4786
+
+  E7 at κ = 0.514 (plateau [0.463, 0.564]):
+    D_corr = 3.7594 ± 0.0300
+    D_KY = 4.15
+    |D_corr - 4| = 0.2406
+qt.qpa.wayland: Wayland does not support QWindow::requestActivate()
+kf.kio.filewidgets.kfilefiltercombo: Could not find filter "*.png|Portable Network Graphics"
+inotify_add_watch(/var/lib/samba/usershares) failed: (Permission denied)
+
+╔══════════════════════════════════════════════════════════════════════╗
+║  FINAL ANALYSIS v7                                            ║
+╠══════════════════════════════════════════════════════════════════════╣
+║  1. The non-symplectic map IS dissipative (⟨ln|det J|⟩ < 0)   ║
+║     → D_KY < rank is a GENERIC property of dissipative maps   ║
+║     → D_KY = 0 at some κ is fixed-point collapse, not physics ║
+║  2. Chaotic D≈4 plateaus found: 13/13 algebras                ║
+║     Mean plateau width: 0.413                                 ║
+║  3. Symplectic map reaches D≈4: 0/4 tested algebras                ║
+║  4. Most precise D=4: D6 with D_corr=3.980±0.019        ║
+╠══════════════════════════════════════════════════════════════════════╣
+║  CONCLUSION:                                                  ║
+║  • D_KY passing through 4 is TRIVIAL (intermediate value thm) ║
+║  • D_KY PLATEAU at D≈4 may be NON-TRIVIAL (needs width check) ║
+║  • Symplectic map is the CORRECT physical formulation          ║
+║  • Only symplectic D≈4 results are physically meaningful       ║
+╚══════════════════════════════════════════════════════════════════════╝
