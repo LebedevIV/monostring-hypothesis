@@ -1,1 +1,90 @@
+═════════════════════════════════════════════════════════════════╗
+║  SBE HYPOTHESIS — CORRECTED CRITICAL TEST SUITE v2        ║
+║  Fixes: D_eff saturation, Bell test, null model           ║
+╚═════════════════════════════════════════════════════════════════╝
+
+[1/8] Generating trajectory (N=15000, κ=0.5)...
+      D_corr = 4.751
+      λ_max = 0.1244 (CHAOTIC)
+      Time: 0.86s
+
+[2/8] Building resonance graph (target deg=40)...
+      ε=1.296, edges=306,123, avg_deg=42.8
+      Time: 2.55s
+
+[3/8] Building NULL MODEL (random T^6, same degree)...
+      D_corr(null) = 5.712
+      edges=298,743, avg_deg=41.8
+      Time: 3.11s
+
+[4/8] Measuring dimension (SBE vs null)...
+      SBE:  D_reg=3.79, D_micro=3.84, D_meso=nan, sat_R=4
+      NULL: D_reg=4.68, D_micro=4.96, D_meso=nan, sat_R=3
+      Time: 6.79s
+
+[5/8] Ollivier-Ricci curvature (n=300)...
+        100/300 edges computed
+        200/300 edges computed
+        300/300 edges computed
+      <κ_OR>=-0.0344, corr(κ,ρ)=0.467
+        100/100 edges computed
+      NULL: <κ_OR>=-0.2336, corr=0.102
+      Time: 3475.57s
+
+[6/8] Quantum Bell test (corrected)...
+      Constructing Hamiltonian...
+      Computing 40 lowest eigenstates...
+      Subsystems: |A|=7005, |B|=7995
+      Ground state: [-0.034, -0.707, 0.705, -0.034]
+      Concurrence = 1.0000 (ENTANGLED)
+      S_CHSH = -2.4299
+      E(a,b)=-0.883, E(a,b')=-0.292, E(a',b)=-0.956, E(a',b')=-0.883
+      |S|=2.4299, classical limit: 2, QM: 2.828
+      Time: 207.46s
+
+[7/8] Dirac mass spectrum...
+      Zero modes: 1
+      Mass gap: 0.971048
+      First 5: [0.97104827 0.97696769 1.01642543 1.04268026 1.09671523]
+      Ratios: [1.         1.00609591 1.04673007 1.07376769 1.1294137 ]
+      Time: 11.39s
+
+[8/8] Phase diagram κ-sweep...
+    κ=0.00... D_corr=5.78, D_reg=4.11, λ=0.000, t=3.9s
+    κ=0.10... D_corr=5.67, D_reg=4.35, λ=-0.000, t=4.0s
+    κ=0.20... D_corr=5.53, D_reg=4.23, λ=0.000, t=3.9s
+    κ=0.30... D_corr=5.25, D_reg=3.99, λ=0.004, t=3.7s
+    κ=0.40... D_corr=4.95, D_reg=3.41, λ=0.047, t=2.8s
+    κ=0.50... D_corr=4.82, D_reg=3.74, λ=0.127, t=3.4s
+    κ=0.60... D_corr=4.77, D_reg=3.98, λ=0.221, t=3.6s
+    κ=0.80... D_corr=4.72, D_reg=4.05, λ=0.420, t=3.6s
+    κ=1.00... D_corr=5.01, D_reg=4.05, λ=0.573, t=3.9s
+    κ=1.50... D_corr=5.50, D_reg=4.33, λ=0.863, t=3.7s
+    κ=2.00... D_corr=5.72, D_reg=4.46, λ=1.113, t=3.6s
+qt.qpa.wayland: Wayland does not support QWindow::requestActivate()
+kf.kio.filewidgets.kfilefiltercombo: Could not find filter "*.png|Portable Network Graphics"
+inotify_add_watch(/var/lib/samba/usershares) failed: (Permission denied)
+
+╔══════════════════════════════════════════════════════════════════════╗
+║  FINAL VERDICT v2 (with null model comparison)               ║
+╠══════════════════════════════════════════════════════════════════════╣
+║  ✓ PASS  Chaos at κ=0.5 (λ > 0)                           λ=0.1244  ║
+║         Prerequisite for non-trivial geometry                        ║
+║  ✓ PASS  D_corr < 5.5 (attractor compressed)           D_corr=4.75  ║
+║         E₆ coupling reduces attractor dimension                      ║
+║  ✓ PASS  D_reg(SBE) < D_reg(null) (non-trivial)     SBE=3.79 vs null=4.68  ║
+║         Graph geometry differs from trivial RGG                      ║
+║  ✗ FAIL  Positive mean curvature                       <κ>=-0.0344  ║
+║         Positive = de Sitter-like spacetime                          ║
+║  ✓ PASS  Einstein eqn: corr(κ,ρ) > 0.3                     r=0.467  ║
+║         Curvature tracks matter density                              ║
+║  ✓ PASS  Entanglement (concurrence > 0.1)                  C=1.000  ║
+║         Graph Hamiltonian produces entanglement                      ║
+║  ✓ PASS  Bell violation (|S| > 2)                        |S|=2.430  ║
+║         Quantum correlations from graph                              ║
+║  ✓ PASS  Mass gap exists                                 Δm=0.9710  ║
+║         Discrete spectrum = quantized masses                         ║
+╠══════════════════════════════════════════════════════════════════════╣
+║  Score: 7/8 (88%) — PROMISING                                ║
+╚══════════════════════════════════════════════════════════════════════╝
 
