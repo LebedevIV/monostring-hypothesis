@@ -1,3 +1,11 @@
+*Note: This is the original, unedited "stream of consciousness" draft written in Russian, which served as the genesis of the Monostring Hypothesis. This text has been and continues to be supplemented and can be found at: https://docs.google.com/document/d/1SHjycSJGu0caQwL_eSdPTrbnXXMwVwRrJZFA09iJhX0/edit?usp=sharing
+For the structured and translated version, please see `monostring_philosophy_en.md`.*
+
+*Примечание: Это оригинальный, неотредактированный черновик на русском языке, с которого началось развитие гипотезы Моноструны. Этот текст дополнялся и продолжает дополняться и находится по адресу: https://docs.google.com/document/d/1SHjycSJGu0caQwL_eSdPTrbnXXMwVwRrJZFA09iJhX0/edit?usp=sharing
+Структурированная версия доступна в файле `monostring_philosophy_ru.md`.*
+
+---
+
 Космологическая гипотеза единого базового элемента (протоэлемента, протоструны, осциллятора)
 Cosmological hypothesis of a single basic element (protoelement, protostring)
 
