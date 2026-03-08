@@ -111,6 +111,12 @@ Three Others. GitHub/Zenodo. https://github.com/LebedevIV/monostring-hypothesis"
 [![DOI: Paper](https://img.shields.io/badge/DOI-Paper%20(PDF)-blue.svg)](https://doi.org/10.5281/zenodo.18886047)
 [![DOI: Code](https://zenodo.org/badge/DOI/10.5281/zenodo.18890266.svg)](https://doi.org/10.5281/zenodo.18890266)
 
+## 📄 Documentation & Papers
+
+*   **[The Main Paper (English)](paper/monostring_paper_en.md)** — The complete write-up of the 7 computational experiments, dimensional reduction, and ultimate falsification of the classical model.
+*   **[Philosophical Foundations (English)](paper/monostring_philosophy_en.md)** | **[(Русский)](paper/monostring_philosophy_ru.md)** — The ontological framework and motivation behind the Monostring conjecture.
+*   *[Historical Artifact: Original Raw Draft (Russian)](paper/draft_v0_raw_ru.md)*
+
 *The full academic paper (PDF) is officially published and available on [Zenodo](https://doi.org/10.5281/zenodo.18886047).*
 *This repository contains the source code, raw data, and markdown drafts associated with the paper.*
 
