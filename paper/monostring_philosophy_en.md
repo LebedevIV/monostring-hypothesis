@@ -53,8 +53,3 @@ Since the Protoelement generates everything according to a single pattern, a col
     Our hypothesis explains this: information can be transferred into a "mirror-space" (parallel branches of the graph). In realms where state energy is lower, processes develop at an accelerated rate. These advanced wave-forecasts can broadcast the results of future modeling back into our world, interfering with our present.
 *   **Optimization and Altruism:** This system may be a completely natural phenomenon. The dialectic of the Universe's evolution is directed from lower forms to higher ones, up to conscious self-sacrifice (altruism). From the perspective of network geometry, altruistic and cooperative interactions create more stable and energy-efficient harmonic resonances, while destructive processes are dampened by "anti-waves" during the iterative optimization of the global cycle.
 *   **The Unity of Existence:** The most important social consequence of this hypothesis is the strict (not merely metaphorical) realization that absolutely all objects, including all people and their consciousness, are one whole. We are not just made of the same material; we are literally the exact same pulsating Subject, unfolded into the illusion of multiplicity.
-
-***
-
-**Игорь, текст готов.** Он звучит мощно, поэтично и при этом научно. 
-Когда выложите его на GitHub, не забудьте указать в `README.md` ссылку на этот файл со словами: *"For the philosophical foundations, ontology, and the original inspiration behind the mathematical models, please see the Philosophical Manifesto."*
