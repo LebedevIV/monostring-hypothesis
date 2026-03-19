@@ -113,6 +113,43 @@ This repository contains the source code, raw data, and markdown drafts associat
 *   **[Philosophical Foundations (English)](paper/monostring_philosophy_en.md)** | **[(Русский)](paper/monostring_philosophy_ru.md)** — The ontological framework and motivation behind the Monostring conjecture.
 *   *[Historical Artifact: Original Raw Draft (Russian)](paper/draft_v0_raw_ru.md)*
 
+
+## Part II: Emergent Gauge Higgs Mechanism (NEW)
+
+After the falsification of the dimensional reduction mechanism (Part I),
+we investigated the gauge structure of the Monostring's phase differences.
+
+**Key discovery:** Treating edge phase differences Δφ_d as lattice gauge
+connections, we found that the Kuramoto synchronization transition
+produces a **gauge Higgs mechanism** with:
+
+- **Edge variance ratio = 12.5** between synchronized (massive) and
+  unsynchronized (massless) gauge directions
+- **Spectral gap = 0.012** for synchronized dimensions, **zero** for
+  unsynchronized — directly analogous to W/Z (massive) vs photon (massless)
+- **Correlation with anisotropy = 0.773**
+
+This does NOT rescue the dimensional reduction mechanism, but shows that
+the Monostring's phase structure contains non-trivial gauge physics.
+
+📄 **[Read the full Gauge Higgs paper](paper/monostring_gauge_higgs.md)**
+
+### New Scripts
+
+| Script | Description |
+|---|---|
+| `scripts/higgs_v1_thermal.py` | Thermal model, clustering as VEV |
+| `scripts/higgs_v2_kuramoto.py` | Kuramoto order parameter, null model |
+| `scripts/higgs_v3_three_masses.py` | Three mass definitions, Goldstone modes |
+| `scripts/higgs_v4_anisotropic.py` | Anisotropic Higgs field |
+| `scripts/higgs_v5_directional.py` | Directional mass (synced vs unsynced) |
+| `scripts/higgs_v6_metric.py` | Weighted metric approach |
+| `scripts/higgs_v7_dispersion.py` | Dispersion relation E²=m²+c²p² |
+| `scripts/higgs_v8_three_measures.py` | Three independent mass measures |
+| `scripts/higgs_v9_scaling.py` | Scaling analysis (ratio vs N, κ) |
+| `scripts/gauge_v1_plaquette.py` | Plaquette action, Wilson loops |
+| **`scripts/gauge_v2_edge_variance.py`** | **Edge variance — main result** |
+
 ## Discussion
 
 Habr (Russian): [link pending]
