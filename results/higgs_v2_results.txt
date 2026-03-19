@@ -1,0 +1,54 @@
+======================================================================
+  MONOSTRING HIGGS LABORATORY v2
+  Strict degree control + Kuramoto order parameter
+======================================================================
+
+[1/4] Phase transition scan (N=3000, target_deg=30)
+             T |    r_K    VEV   mass  clust   deg |   r_n   V_n   m_n   c_n   d_n
+      ------------------------------------------------------------------------
+         3.162 |  0.015  0.695  0.244  0.219  28.5 | 0.014 0.160 0.255 0.218  31.4  (4.3s)
+         1.874 |  0.067  0.698  0.247  0.222  29.5 | 0.013 0.163 0.250 0.217  29.9  (4.1s)
+         1.110 |  0.213  0.726  0.231  0.259  29.8 | 0.008 0.162 0.248 0.219  30.1  (4.3s)
+         0.658 |  0.311  0.767  0.202  0.308  30.2 | 0.012 0.167 0.249 0.217  28.5  (4.1s)
+         0.390 |  0.364  0.816  0.141  0.367  30.5 | 0.016 0.168 0.246 0.219  28.6  (4.3s)
+         0.231 |  0.381  0.834  0.095  0.437  31.2 | 0.014 0.168 0.244 0.217  28.5  (4.3s)
+         0.137 |  0.377  0.830  0.061  0.499  30.6 | 0.013 0.158 0.255 0.217  31.5  (5.0s)
+         0.081 |  0.372  0.836  0.041  0.520  29.7 | 0.019 0.160 0.259 0.216  31.3  (4.5s)
+         0.048 |  0.374  0.842  0.030  0.549  30.1 | 0.011 0.163 0.251 0.218  29.9  (4.5s)
+         0.028 |  0.367  0.846  0.023  0.572  30.0 | 0.020 0.169 0.246 0.216  28.5  (4.0s)
+         0.017 |  0.364  0.857  0.022  0.566  28.7 | 0.013 0.164 0.254 0.218  30.0  (4.1s)
+         0.010 |  0.366  0.854  0.024  0.571  30.6 | 0.009 0.164 0.248 0.220  29.9  (4.2s)
+
+[2/4] Phase transition analysis...
+      T_c approx 1.442
+      Delta r = 0.146
+      Phase transition: YES
+
+[3/4] Mexican hat check (coldest T)...
+      Mode = 0.959, Broken: YES
+
+[4/4] Quantum walk...
+      Hot rate: 0.2790, Cold rate: 1.7024
+      Ratio: 6.101
+      Inertia effect: NO
+
+  CORRELATION ANALYSIS:
+      corr(mass, r_Kuramoto) = -0.829 (ANTI-Yukawa)
+      corr(mass, degree) = -0.290 (OK)
+      corr(r_Kuramoto, degree) = 0.612 (CONFOUND!)
+      corr(clustering, degree) = 0.283 (OK)
+qt.qpa.wayland: Wayland does not support QWindow::requestActivate()
+
+======================================================================
+  VERDICT
+======================================================================
+  [+] PASS  Phase transition in r_Kuramoto           dr=0.146
+  [+] PASS  SBE r >> null r (at low T)               0.366 vs 0.009
+  [+] PASS  Symmetry broken (mode > 0.3)             mode=0.959
+  [-] FAIL  Mass grows with VEV (Yukawa)             corr=-0.829
+  [+] PASS  Degree controlled (cv < 15%)             cv=2.5%
+  [+] PASS  No degree-mass confound                  corr=-0.290
+  [-] FAIL  Inertia effect (cold slower)             ratio=6.10
+
+  Score: 5/7
+======================================================================
