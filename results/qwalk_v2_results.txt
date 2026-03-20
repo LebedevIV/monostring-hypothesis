@@ -1,0 +1,71 @@
+======================================================================
+  QUANTUM WALK v2: EIGENVALUE COUNTING + HEAT KERNEL
+  Fix: use Weyl's law N(λ)~λ^{d/2} instead of P(t)~t^{-d/2}
+  Fix: heat kernel from exact eigenvalues (no finite-time error)
+======================================================================
+
+[1/5] CONTROL: Known lattices (eigenvalue counting)
+         Lattice      N | d_s(Weyl)   ±err |    k_eig
+      --------------------------------------------------
+       2D (L=30)    900 |     2.17   0.01 |      300  (6.4s)
+       3D (L=12)   1728 |     3.31   0.01 |      300  (15.4s)
+       4D (L= 7)   2401 |     4.49   0.02 |      300  (20.4s)
+       5D (L= 5)   3125 |     4.41   0.09 |      200  (5.0s)
+
+      CONTROL: Heat kernel d_s(t)
+         Lattice | d_s(t=0.1) d_s(t=1) d_s(t=5)
+      ----------------------------------------
+       2D        |     0.08     0.75     2.08
+       3D        |     0.08     0.75     2.64
+       4D        |     0.08     0.81     3.25
+       5D        |     0.11     0.99     3.53
+
+[2/5] MONOSTRING: Spectral dimension vs temperature
+           T | d_s(Weyl)   ±err | d_s(0.1) d_s(1.0) d_s(5.0) |   r_K   deg
+      ---------------------------------------------------------------------------
+       3.000 |     9.80   0.27 |     0.08     0.83     3.96 | 0.006  23.9  (32.4s)
+       1.000 |    10.86   0.55 |     0.08     0.83     3.97 | 0.179  25.9  (51.1s)
+       0.500 |     9.86   0.33 |     0.08     0.77     3.71 | 0.213  24.4  (50.1s)
+       0.200 |     7.19   0.13 |     0.07     0.73     3.39 | 0.238  26.2  (53.7s)
+       0.100 |     6.43   0.15 |     0.07     0.69     3.18 | 0.250  25.3  (55.0s)
+       0.050 |     5.93   0.15 |     0.07     0.67     3.06 | 0.252  26.2  (52.8s)
+       0.020 |     5.76   0.06 |     0.07     0.65     2.93 | 0.254  25.7  (41.7s)
+
+[3/5] NULL MODEL: Random T^6
+      d_s(Weyl) = 9.70 ± 0.21
+      d_s(t=0.1) = 0.09, d_s(t=1) = 0.85, d_s(t=5) = 4.02
+      (41.4s)
+
+[4/5] EIGENVALUE SPACING STATISTICS
+      GUE (quantum chaos): Wigner-Dyson spacing P(s)~s*exp(-s²)
+      Poisson (integrable): P(s) = exp(-s)
+      Monostring T=0.02: <r> = 0.5291 (GUE=0.531, Poisson=0.386)
+      Null (random): <r> = 0.5256 (GUE=0.531, Poisson=0.386)
+
+[5/5] KAPPA SCAN: d_s vs coupling strength
+         kappa | d_s(Weyl)   ±err | d_s(0.1) d_s(1.0)
+      ---------------------------------------------
+          0.00 |    10.73   2.55 |     0.09     0.85  (43.1s)
+          0.10 |    10.14   0.98 |     0.08     0.79  (38.8s)
+          0.20 |    10.36   0.82 |     0.09     0.87  (52.9s)
+          0.30 |     7.49   0.04 |     0.08     0.75  (79.3s)
+          0.50 |     5.70   0.14 |     0.07     0.65  (54.1s)
+          0.70 |     6.53   0.22 |     0.07     0.65  (62.1s)
+          1.00 |     7.16   0.29 |     0.07     0.69  (54.2s)
+          1.50 |     8.12   0.17 |     0.08     0.81  (42.8s)
+          2.00 |     9.08   0.20 |     0.08     0.83  (37.3s)
+
+  Figure saved: quantum_walk_v2_results.png
+
+======================================================================
+  QUANTUM WALK v2 VERDICT
+======================================================================
+  [+] PASS  Control: 2D lattice gives d_s ≈ 2                  d_s = 2.17
+  [+] PASS  Control: 4D lattice gives d_s ≈ 4                  d_s = 4.49
+  [+] PASS  Monostring d_s changes with T                      hot=9.80, cold=5.76
+  [+] PASS  Monostring d_s differs from null                   mono=5.76, null=9.70
+  [-] FAIL  Monostring d_s ≈ 4 at some T                       closest: 5.76
+  [+] PASS  d_s correlates with Kuramoto r                     corr = -0.632
+
+  Score: 5/6
+======================================================================
