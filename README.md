@@ -178,6 +178,30 @@ guarantees).
 | `scripts/gauge_v1–v3` | Gauge field analysis + falsification |
 | `scripts/causal_v1–v4` | Causal set exploration |
 
+### Part III: Spectral Dimension from Quantum Walks (NEW)
+
+Spectral dimension of Monostring graphs measured via Weyl's eigenvalue 
+counting law N(λ) ~ λ^{d_s/2}.
+
+**Key findings:**
+- E₆ synchronization reduces spectral dimension by **37–51%** vs null model
+  (5.72 vs 9.70 at n_phases=6, 20 runs, std 2.2%)
+- **D₆ = SO(12) gives d_s = 3.92** — closest to 4.0 among all tested algebras
+- d_s scales sub-linearly with n_phases: slope = 0.62 (not trivially d_s = n)
+- d_s ≠ 4.0 precisely (95% CI excludes 4.0 at all configurations)
+- Synchronized directions are NOT compactified — reduction comes from 
+  inter-dimensional correlations
+
+📄 **[Full Part III paper](paper/monostring_part3_spectral.md)**
+
+### New Scripts (Part III)
+
+| Script | Description |
+|--------|-------------|
+| `scripts/qwalk_v1_spectral.py` | Return probability (control failed) |
+| `scripts/qwalk_v2_weyl.py` | Weyl law + heat kernel (control works) |
+| `scripts/qwalk_v3_nphases.py` | d_s vs n_phases scan |
+| `scripts/qwalk_v4_clarification.py` | Final clarifications (D₆, decomposition) |
 
 
 ## Discussion
