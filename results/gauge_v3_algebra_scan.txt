@@ -1,0 +1,53 @@
+======================================================================
+  GAUGE HIGGS: ALL RANK-6 ALGEBRAS + NULL MODEL
+======================================================================
+
+  Algebra         | r_max r_min |   Var_s   Var_u   Ratio |  Patt. |   deg
+  ---------------------------------------------------------------------------
+  A6_SU7          | 0.965 0.043 |  0.0161  0.3046   18.88 |    2+4 |  24.6  (4.5s)
+  B6_SO13         | 0.945 0.197 |  0.0321  0.3052    9.50 |    2+4 |  25.6  (4.3s)
+  C6_Sp12         | 0.940 0.159 |  0.0673  0.3206    4.77 |    2+4 |  25.8  (4.6s)
+  D6_SO12         | 0.960 0.226 |  0.0203  0.3240   15.98 |    2+4 |  25.4  (4.2s)
+  E6              | 0.956 0.172 |  0.0265  0.3339   12.62 |    2+4 |  25.7  (4.2s)
+
+  NULL MODELS:
+  ---------------------------------------------------------------------------
+  Null (art.sync) |     -     - |  0.0185  0.4106   22.20 |    2+4 |  24.9
+  Null (no sync)  |     -     - |  0.6386  0.6365    1.00 |    0+6 |  25.1
+
+  WEINBERG ANGLE ANALOG (for algebras with 2+ synced dims):
+  SM value: cos(theta_W) = 0.9204
+  Algebra         |  Var(d_s1)  Var(d_s2)      ratio
+  --------------------------------------------------
+  A6_SU7          |   0.015413   0.015430     0.9989
+  B6_SO13         |   0.038103   0.027485     1.3863
+  C6_Sp12         |   0.031088   0.103872     0.2993
+  D6_SO12         |   0.020673   0.020551     1.0059
+  E6              |   0.026085   0.028287     0.9222
+
+======================================================================
+  VERDICT: ALGEBRA COMPARISON
+======================================================================
+  E6 ratio: 12.62
+  Other algebras mean ratio: 12.28
+  Null (artificial sync) ratio: 22.20
+  Null (no sync) ratio: 1.00
+
+  E6 is NOT special — all algebras give similar ratio
+  WARNING: Null model also gives high ratio — result may be trivial!
+
+  Breaking patterns:
+    A6_SU7: 2+4 (synced dims: [0, 5])
+    B6_SO13: 2+4 (synced dims: [0, 5])
+    C6_Sp12: 2+4 (synced dims: [0, 5])
+    D6_SO12: 2+4 (synced dims: [0, 5])
+    E6: 2+4 (synced dims: [0, 5])
+======================================================================
+
+  Figure saved: gauge_algebra_comparison.png
+
+  NEXT STEPS:
+  1. If E6 is unique → focus on E6 representation theory
+  2. If all algebras work → the result is about Kuramoto + Lie, not E6
+  3. If null model also works → result is trivial (just sync geometry)
+  4. Look for 3+1 breaking pattern (Standard Model)
