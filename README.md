@@ -150,6 +150,36 @@ the Monostring's phase structure contains non-trivial gauge physics.
 | `scripts/gauge_v1_plaquette.py` | Plaquette action, Wilson loops |
 | **`scripts/gauge_v2_edge_variance.py`** | **Edge variance — main result** |
 
+### Part II Update: Gauge Result Falsified + Causal Sets Explored
+
+The gauge Higgs result (edge variance ratio = 12.5) was **falsified** by a 
+null model test: artificially synchronized random phases give ratio = 22.2, 
+demonstrating the effect is trivial geometry, not gauge physics.
+
+Causal set exploration (scripts causal_v1–v4) found D ≈ 4 with light-cone 
+rules, but the result is **parameter-dependent** — any D from 1 to 7 is 
+achievable by tuning the speed-of-light parameter.
+
+**Surviving results:**
+- Anisotropic Kuramoto transition (2/6 dims, T_c ≈ 1.4) — genuine
+- Dynkin topology determines synchronization pattern — genuine
+- 3 Goldstone-like modes — genuine
+
+**Next direction:** Quantum walks (last unexplored path with theoretical 
+guarantees).
+
+📄 **[Full Part II paper](paper/monostring_part2_gauge_causal.md)**
+
+### New Scripts (Part II)
+
+| Script | Description |
+|--------|-------------|
+| `scripts/higgs_v1–v9` | Higgs field search (9 iterations) |
+| `scripts/gauge_v1–v3` | Gauge field analysis + falsification |
+| `scripts/causal_v1–v4` | Causal set exploration |
+
+
+
 ## Discussion
 
 Habr (Russian): [link pending]
