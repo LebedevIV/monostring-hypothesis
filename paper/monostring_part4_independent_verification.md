@@ -1,6 +1,3 @@
-
-
-```markdown
 # The Monostring Hypothesis Part IV: Independent Verification of Graph Cosmology
 
 **Author:** Igor Lebedev
