@@ -1,8 +1,3 @@
-
-
-Вот обновлённый `README.md` целиком:
-
-```markdown
 # The Monostring Hypothesis
 
 **Seven Computational Experiments That Killed One Path to Emergent Spacetime — and Opened Three Others**
