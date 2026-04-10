@@ -113,21 +113,165 @@ monostring-hypothesis/
 │       ├── part4plus_v7.py       # Correct manifold distances
 │       └── part4plus_v8.py       # Final: D_corr(E₆)=3.02
 │
-├── figures/
-│   ├── part1/
-│   ├── part2/
-│   ├── part3/
-│   ├── part4/
-│   └── part5/                    ← NEW
-│       ├── benchmarks_v3.png
-│       ├── chain_diagnostic.png
-│       ├── chain_collapse_v5.png
-│       ├── part4plus_v3.png
-│       ├── part4plus_v4.png
-│       ├── part4plus_v5.png
-│       ├── part4plus_v6.png
-│       ├── part4plus_v7_final.png
-│       └── part4plus_v8_FINAL.png
+|──figures/
+   │
+   ├── part1/                              # Lyapunov, symplectic, plateau plots
+   │   ├── lyapunov_spectrum_E6.png
+   │   │   # Lyapunov exponent spectrum for E6 at κ=0.25
+   │   │   # Shows: D_KY = 4.025 ± 0.040 (dissipative case)
+   │   │   # Source: scripts/part1/v4_claude_lyapunov.py
+   │   │
+   │   ├── symplectic_test.png
+   │   │   # D_KY vs rank r for all 13 Lie algebras, symplectic case
+   │   │   # Shows: D_KY = 2r identically — the fatal result
+   │   │   # Source: scripts/part1/v7_claude_symplectic.py
+   │   │
+   │   ├── dky_plateau_all_algebras.png
+   │   │   # D_KY as a function of κ for ranks 4–8 (dissipative maps)
+   │   │   # Shows: universal plateau at D_KY ≈ 4 across all algebras
+   │   │   # Source: scripts/part1/v5_claude_all_algebras.py
+   │   │
+   │   └── rank_vs_dky.png
+   │       # D_KY vs algebra rank (4–8), dissipative and symplectic
+   │       # Shows: dissipative → plateau at 4; symplectic → D_KY = 2r
+   │       # Source: scripts/part1/v6_claude_rank_analysis.py
+   │
+   ├── part2/                              # Kuramoto, edge variance, causal sets
+   │   ├── kuramoto_transition.png
+   │   │   # Kuramoto order parameter r_d vs temperature T, per dimension
+   │   │   # Shows: T_c ≈ 1.4, anisotropic 2+4 breaking, absent in null
+   │   │   # Source: scripts/part2/higgs_v4_anisotropic.py
+   │   │
+   │   ├── edge_variance_ratio.png
+   │   │   # Edge variance ratio (synced / unsynced directions) vs algebra
+   │   │   # Shows: E6 ratio=12.5, null model ratio=22.2 → falsified
+   │   │   # Source: scripts/part2/gauge_v2_edge_variance.py
+   │   │
+   │   ├── causal_set_dimension.png
+   │   │   # Causal set dimension D vs speed-of-light parameter c
+   │   │   # Shows: D = 4.01 at c=0.20, but any D achievable by tuning c
+   │   │   # Source: scripts/part2/causal_v4_light_cone.py
+   │   │
+   │   └── goldstone_modes.png
+   │       # Mass spectrum of fluctuations around synchronized state
+   │       # Shows: 3 near-zero modes (Goldstone), 3 massive modes
+   │       # Source: scripts/part2/higgs_v8_three_measures.py
+   │
+   ├── part3/                              # Weyl law, algebra comparison, d_s
+   │   ├── weyl_ds_algebras.png
+   │   │   # Spectral dimension d_s (Weyl law) for E6, D6, B6, A6, null
+   │   │   # Shows: D6=3.92 closest to 4.0; all algebras above null
+   │   │   # Source: scripts/part3/qwalk_v2_weyl.py
+   │   │
+   │   ├── ds_reduction_vs_null.png
+   │   │   # d_s(E6) vs d_s(null) across β-scan
+   │   │   # Shows: 37–51% reduction; two methods agree (Weyl + heat kernel)
+   │   │   # Source: scripts/part3/qwalk_v4_clarification.py
+   │   │
+   │   └── gue_statistics.png
+   │       # Level spacing ratio ⟨r⟩ histogram for graph Laplacian
+   │       # Shows: ⟨r⟩ = 0.529 vs GUE prediction 0.531
+   │       # Source: scripts/part3/qwalk_v3_nphases.py
+   │
+   ├── part4/                              # Graph cosmology v1–v7
+   │   ├── benchmark_ds.png
+   │   │   # d_s(t) curves for path and grid graphs (v6 fixed measurement)
+   │   │   # Shows: path→1.07, 2D grid→2.03, 3D grid→3.00
+   │   │   # Source: scripts/part4/graph_cosmology_v6.py
+   │   │
+   │   ├── rescue_experiment.png
+   │   │   # d_s vs N for chain graph (v7 size dependence test)
+   │   │   # Shows: d_s ≈ 2.16 + 0.002·N — the key negative result
+   │   │   # Source: scripts/part4/graph_cosmology_v7.py
+   │   │
+   │   ├── rescue_v5_omega_scan.png
+   │   │   # d_s vs β (E6 → uniform interpolation), 40 points
+   │   │   # Shows: non-monotonic resonances; d_s range 3.7–12.1
+   │   │   # Source: scripts/part4/graph_cosmology_v5.py
+   │   │
+   │   ├── rescue_v6.png
+   │   │   # Algebra comparison at fixed N (Weyl + heat kernel)
+   │   │   # Shows: E6 not closest to 4.0 at fixed N; D6 closer
+   │   │   # Source: scripts/part4/graph_cosmology_v6.py
+   │   │
+   │   └── rescue_v7.png
+   │       # Fine β-scan + algebra scan + size dependence (3-panel)
+   │       # Shows: B6 in 95% CI; E6 excluded; d_s ∝ N confirmed
+   │       # Source: scripts/part4/graph_cosmology_v7.py
+   │
+   └── part5/                              # Resolution: D_corr, manifold comparison
+       │
+       ├── benchmarks_v3.png
+       │   # 5-panel figure: d_s(t) curves for Path, Cycle, 2D/3D/4D grid
+       │   # Demonstrates that the plateau is correctly detected
+       │   # Source: scripts/part5/part5_v3_knn_benchmarks.py
+       │
+       ├── knn_kscan.png
+       │   # E6 vs null: calibrated d_s as a function of k
+       │   # Shows that k*=20 gives d_s_cal≈4 for E6
+       │   # while null stays below 3.5 at the same connectivity
+       │   # Source: scripts/part5/part5_v4_knn_kscan.py
+       │
+       ├── algebra_comparison_boxplot.png
+       │   # Notched box plot: E6/B6/D6/A6/Null at k=8, N=800, n=10
+       │   # Shows that E6 is unique by d_s (t=92.65 vs null, p<0.0001)
+       │   # but d_s identifies E6 as 3D, not 4D
+       │   # Source: scripts/part5/part5_v5_algebra_comparison.py
+       │
+       ├── dcorr_precision.png
+       │   # Bar chart with 95% CI: D_corr for all configurations
+       │   # N=1000, 15 seeds, torus metric
+       │   # Shows: E6=3.021≈T³=2.996, T⁴=3.930, T⁶=5.453
+       │   # Source: scripts/part5/part5_v6_dcorr_precision.py
+       │
+       ├── manifold_ds_curves.png
+       │   # 5-panel figure: d_s(t) heat-kernel curves for T³, T⁴, S³, E6, T⁶
+       │   # Shows plateau location for each manifold
+       │   # Explains why T⁴ gives d_s_cal=1.09 despite true dimension 4
+       │   # Source: scripts/part5/part5_v7_manifold_comparison.py
+       │
+       ├── dcorr_vs_ds_scatter.png                        ← KEY FIGURE
+       │   # Scatter plot: D_corr on X-axis, d_s_cal on Y-axis
+       │   # Reference lines: d_s = D_corr (diagonal)
+       │   #                  d_s = 1.40 × D_corr (3D k-NN rule)
+       │   # E6, T³, and S³ lie on the 1.40×D_corr line
+       │   # T⁴ and T⁶ are far from both lines
+       │   # Conclusion: d_s≈4 at k=20 identifies 3D structures, not 4D
+       │   # Source: scripts/part5/part5_v7_manifold_comparison.py
+       │
+       ├── algebra_dcorr_comparison.png
+       │   # D_corr ± SEM for E6/A6/D6/B6/Uniform/Null
+       │   # N=1000, 8 runs each, torus metric
+       │   # Shows: all rank-6 algebras give D_corr ∈ [2.89, 3.02]
+       │   # E6 is not unique in this regard
+       │   # Source: scripts/part5/part5_v8_what_is_special.py
+       │
+       └── dark_energy_models.png
+           # 4-panel figure:
+           #   Panel 1: ⟨d⟩ vs epoch (models A/B/C/D/E)
+           #   Panel 2: expansion velocity d⟨d⟩/dt
+           #   Panel 3: acceleration d²⟨d⟩/dt²
+           #   Panel 4: Hubble parameter H (exponential fit)
+           # Shows: B and C produce dark energy (acc>0, H>0)
+           # but E6 phases are irrelevant (p=0.904 vs random phases)
+           # and feedback adds nothing over constant λ (p=0.934)
+           # Source: scripts/part5/part5_v1_dark_energy_models.py
+   
+   ---
+   
+   ### Key figures across all parts
+   
+   The following figures are the minimum required to understand
+   the main results of each part:
+   
+   | Figure | Part | What it shows |
+   |--------|------|---------------|
+   | `part1/symplectic_test.png` | I | D_KY = 2r: the fatal falsification |
+   | `part2/kuramoto_transition.png` | II | T_c ≈ 1.4, anisotropic 2+4 breaking |
+   | `part3/weyl_ds_algebras.png` | III | d_s reduction 37–51% vs null |
+   | `part4/rescue_experiment.png` | IV | d_s ∝ N: dimension is not fixed |
+   | `part5/dcorr_vs_ds_scatter.png` | V | d_s ≈ 4 identifies 3D, not 4D |
+   | `part5/dcorr_precision.png` | V | D_corr(E6) = 3.02 ≈ D_corr(T³) |
 │
 ├── results/
 │   ├── part1/
