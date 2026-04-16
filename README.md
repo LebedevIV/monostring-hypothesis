@@ -17,8 +17,7 @@
 | IV | Independent verification (graph cosmology v1–v7) | ❌ d_s depends on N; dark energy claim is circular |
 | V | Resolution (Part IV+ v1–v8) | ❌ **D_corr(E₆) ≈ 3.02; d_s ≈ 4 is a 3D k-NN effect** |
 | **VI** | **Fragmentation & Memory Time (v1–v11)** | ⚠️ **Partial**: Naive space emergence falsified, but **Memory Time ($\tau$) discovered** |
-| VII | τ ∝ h(Coxeter) test | ❌ **Falsified** |
-|     | (9 experimental versions) | τ/h coincidence for E6 |
+| **VII** | **τ ∝ h(Coxeter) cross-algebra test** | ❌ **Falsified** (9 experiments) |
 
 ### What survives
 
