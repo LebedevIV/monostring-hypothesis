@@ -17,6 +17,8 @@
 | IV | Independent verification (graph cosmology v1–v7) | ❌ d_s depends on N; dark energy claim is circular |
 | V | Resolution (Part IV+ v1–v8) | ❌ **D_corr(E₆) ≈ 3.02; d_s ≈ 4 is a 3D k-NN effect** |
 | **VI** | **Fragmentation & Memory Time (v1–v11)** | ⚠️ **Partial**: Naive space emergence falsified, but **Memory Time ($\tau$) discovered** |
+| VII | τ ∝ h(Coxeter) test | ❌ **Falsified** |
+|     | (9 experimental versions) | τ/h coincidence for E6 |
 
 ### What survives
 
@@ -38,6 +40,7 @@
 - d_s = 4.0 as a fixed spatial dimension (d_s grows with N in chain graphs; grows with k in k-NN graphs).
 - **d_s ≈ 4 as evidence of 4D spacetime** (it identifies 3D structures, not 4D).
 - Dark energy as geometric inevitability (λ_decay was hand-coded; E₆ irrelevant, p=0.90).
+- - **τ ∝ h(Coxeter):** Memory time τ≈237 (Part VI) does not scale with Coxeter number across A6, E6, E7, E8. The τ/h≈20 ratio for E6 is coincidental. τ measures initial clustering decay, not algebraic memory.
 
 ---
 
