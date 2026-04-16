@@ -168,7 +168,8 @@ The structure of emergent reality in this model is not dictated by instantaneous
 | `v8` | Auto $r$-range calibration | ✅ Fixed Metrology |
 | `v9` | Long-time D_corr convergence test | ✅ Falsified convergence |
 | `v10` | Precise $\Delta S(t)$ crossover measurement | ✅ Core discovery ($\tau$) |
-| `12 - monostring_fragmentation_Summary_of_findings.py` (v12)| Aggregation and visualization | ✅ Final Release |
+| `11 - monostring_fragmentation_summary.py` (v11)| Aggregation and visualization | ✅ Final Release |
+| `12 - monostring_fragmentation_Summary_of_findings.py` (v12)| Aggregation and visualization of v11 | ✅ Final Release |
 
 ---
 
