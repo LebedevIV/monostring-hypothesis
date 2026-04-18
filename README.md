@@ -18,6 +18,7 @@
 | V | Resolution (Part IV+ v1–v8) | ❌ **D_corr(E₆) ≈ 3.02; d_s ≈ 4 is a 3D k-NN effect** |
 | **VI** | **Fragmentation & Memory Time (v1–v11)** | ⚠️ **Partial**: Naive space emergence falsified, but **Memory Time ($\tau$) discovered** |
 | **VII** | **τ ∝ h(Coxeter) cross-algebra test** | ❌ **Falsified** (9 experiments) |
+| **VIII** | **Emergent geodesic structure (Steps 1–6d)** | ✅ **Confirmed: E6 highλ geodesic focusing (z≈6, p<10⁻⁸, Fiedler-controlled)** |
 
 ### What survives
 
@@ -28,6 +29,15 @@
 - Anisotropic Kuramoto synchronization transition (2/6 dims, T_c ≈ 1.4) — non-trivial, reproducible.
 - Universal D_KY ≈ 4 plateau in dissipative coupled standard maps across all simple Lie algebras of ranks 4–8.
 - Number-theoretic resonances driven by quasi-periodic recurrence on T⁶.
+- **E6 highλ Geodesic Focusing:** High-frequency 
+  Laplacian modes of the E6 orbit graph concentrate 
+  along graph geodesics (z≈6, p<10⁻⁸ vs Random), 
+  robust to κ variation and graph connectivity control.
+- **Diffusive wavepacket spreading** in Coxeter 
+  highλ sector (α≈0.30): standing modes, not 
+  propagating particles.
+- **Monotonic IPR gradient** in E6 (ρ=1.0): 
+  ordered spectral hierarchy absent in Random.
 
 ### What is definitively ruled out
 
@@ -39,7 +49,15 @@
 - d_s = 4.0 as a fixed spatial dimension (d_s grows with N in chain graphs; grows with k in k-NN graphs).
 - **d_s ≈ 4 as evidence of 4D spacetime** (it identifies 3D structures, not 4D).
 - Dark energy as geometric inevitability (λ_decay was hand-coded; E₆ irrelevant, p=0.90).
-- - **τ ∝ h(Coxeter):** Memory time τ≈237 (Part VI) does not scale with Coxeter number across A6, E6, E7, E8. The τ/h≈20 ratio for E6 is coincidental. τ measures initial clustering decay, not algebraic memory.
+- **τ ∝ h(Coxeter):** Memory time τ≈237 (Part VI) does not scale with Coxeter number across A6, E6, E7, E8. The τ/h≈20 ratio for E6 is coincidental. τ measures initial clustering decay, not algebraic memory.
+- **Ballistic photon-like propagation** from monostring 
+  graph (α≈0.30, diffusive; no constant c).
+- **Graph geodesic = null geodesic** (R²<0.1, 
+  no causal structure found).
+- **Winding numbers as E6-specific invariant** 
+  (~50% non-trivial for all algebras including Random).
+- **Betti β₁ as driver of geodesic focusing** 
+  (ρ=-0.8, p=0.20, ns).
 
 ---
 
@@ -68,6 +86,7 @@
 | 5 | [Part V — Resolution](paper/monostring_part5_resolution.md) | D_corr(E₆)≈3, d_s≈4 is 3D k-NN effect, final verdict |
 | 6 | [Part VI — Fragmentation](paper/monostring_part6_fragmentation.md) | **NEW:** Entropy crossover, memory time $\tau$, relational graph failures |
 | 7 |[Philosophical Foundations](paper/monostring_philosophy_en.md) | Speculative ontological context (optional) |
+| 8 | [Part VIII — Geodesic Fields](paper/monostring_part8_geodesic_fields.md) | Falsification path + confirmed E6 geodesic structure |
 
 ---
 
