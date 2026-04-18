@@ -69,9 +69,14 @@
 4. **v5–v6:** Discovered D ≈ 4 is not unique to E₆. ALL Lie algebras of rank 6 produce it.
 5. **v7 (fatal):** The symplectic (Hamiltonian) version gives D = 2r identically. **The 4D result was an artifact of dissipative dynamics.**
 6. **Part II:** Gauge Higgs mechanism falsified by null model (ratio = 22.2 with artificial sync).
-7. **Part III & IV:** Spectral dimension d_s depends on graph size $N$. Dark energy model was circular.
+7. **Part III & IV:** Spectral dimension d_s depends on graph size N. Dark energy model was circular.
 8. **Part V (Resolution):** Measured correlation dimension properly. **D_corr(E₆) = 3.02 ≈ D_corr(T³).** The orbit is quasi-3D. d_s ≈ 4 at k=20 is a graph artifact identifying 3D geometries, not 4D spacetime.
-9. **Part VI (Fragmentation):** Monostring shatters. Hoped daughters would entangle into space. Found relative phase drift cancels frequencies entirely. Switched to absolute entropy. **Discovered that fragmentation creates order**, and daughters "remember" their E₆ origin for $\tau \approx 237$ steps before thermalizing. The dimension $D \approx 3$ is proven to be a property of the *unordered set* of irrational frequencies.
+9. **Part VI (Fragmentation):** Monostring shatters. Hoped daughters would entangle into space. Found relative phase drift cancels frequencies entirely. Switched to absolute entropy. **Discovered that fragmentation creates order**, and daughters "remember" their E₆ origin for τ ≈ 237 steps before thermalizing.
+10. **Part VII (τ ∝ h test):** The dimension D ≈ 3 is proven to be a property of the *unordered set* of irrational frequencies. Hoped memory time τ scales with Coxeter number h across algebras. Tested A6, E6, E7, E8. **Falsified:** τ/h ≈ 20 for E6 is coincidental. τ measures initial clustering decay, not algebraic memory.
+11. **Part VIII — Steps 1–4 (falsification run):** Attempted to derive quantum fields from the monostring graph. Collective mode dispersion gave R² = 1.0 — a tautology. Graph geodesics showed no null-geodesic structure (R² < 0.1). Laplacian spectral dimension D ≈ 2 for Coxeter algebras — a bandwidth artifact, not spacetime dimension.
+12. **Part VIII — Steps 5–5c (first signal):** Switched to band-filtered quantum walk on the torus-corrected graph. **Discovered that high-frequency Laplacian modes (highλ) concentrate along graph geodesics in E6** (z ≈ 6 vs z ≈ 0.75 for Random). Confirmed over 29 random source-target pairs: p = 7 × 10⁻¹⁰. E6 highλ above threshold: 100%. Random: 20.7%.
+13. **Part VIII — Step 6 (wavepacket dynamics):** Constructed band-filtered wavepackets. Spreading is **diffusive, not ballistic** (α ≈ 0.30). No constant speed of light. The geodesic structure manifests as **standing modes**, not propagating excitations. Algebra comparison: Coxeter algebras (E6, A6, E8) all show z >> 2; Random shows z ≈ 0.
+14. **Part VIII — Step 6d (decisive control):** Discovered A6 had near-zero Fiedler value (≈ 0.006) — potential connectivity artifact. Matched all algebras to identical Fiedler ≈ 0.15. **Effect survives:** ANOVA F = 17.9, p = 7 × 10⁻⁹. E6 vs Random at matched connectivity: p = 6 × 10⁻⁶. **The geodesic focusing is driven by orbit geometry (D_corr ≈ 2.6), not graph connectivity.** First robust, reproducible structural signature of Coxeter-frequency monostrings.
 
 ---
 
