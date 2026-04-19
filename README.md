@@ -1,6 +1,6 @@
 # The Monostring Hypothesis
 
-**Eight Computational Experiments That Killed One Path to Emergent Spacetime — and Closed Three Others**
+**Nine Computational Experiments That Killed One Path to Emergent Spacetime — and Closed Four Others**
 
 [![DOI: Paper](https://img.shields.io/badge/DOI-Paper%20(PDF)-blue.svg)](https://doi.org/10.5281/zenodo.18886047)
 [![DOI: Code](https://zenodo.org/badge/DOI/10.5281/zenodo.18890266.svg)](https://doi.org/10.5281/zenodo.18890266)
@@ -16,9 +16,10 @@
 | III | Spectral dimension (Weyl law) | ⚠️ Real effect, but d_s ≠ 4.0 and not tested for size dependence |
 | IV | Independent verification (graph cosmology v1–v7) | ❌ d_s depends on N; dark energy claim is circular |
 | V | Resolution (Part IV+ v1–v8) | ❌ **D_corr(E₆) ≈ 3.02; d_s ≈ 4 is a 3D k-NN effect** |
-| **VI** | **Fragmentation & Memory Time (v1–v11)** | ⚠️ **Partial**: Naive space emergence falsified, but **Memory Time ($\tau$) discovered** |
-| **VII** | **τ ∝ h(Coxeter) cross-algebra test** | ❌ **Falsified** (9 experiments) |
-| **VIII** | **Emergent geodesic structure (Steps 1–6d)** | ✅ **Confirmed: E6 highλ geodesic focusing (z≈6, p<10⁻⁸, Fiedler-controlled)** |
+| VI | Fragmentation & Memory Time (v1–v11) | ⚠️ **Partial**: Naive space emergence falsified, but **Memory Time ($\tau$) discovered** |
+| VII | τ ∝ h(Coxeter) cross-algebra test | ❌ **Falsified** (9 experiments) |
+| VIII | Emergent geodesic structure (Steps 1–6d) | ⚠️ **Revised**: z≈6 signal was code artifact (Part IX); diffusive wavepackets and IPR gradient remain real |
+| **IX** | **Mechanism analysis + final falsification** | ❌ **Falsified**: all Coxeter-specific signals explained by Weyl degeneracy, κ, or rank |
 
 ### What survives
 
@@ -29,15 +30,11 @@
 - Anisotropic Kuramoto synchronization transition (2/6 dims, T_c ≈ 1.4) — non-trivial, reproducible.
 - Universal D_KY ≈ 4 plateau in dissipative coupled standard maps across all simple Lie algebras of ranks 4–8.
 - Number-theoretic resonances driven by quasi-periodic recurrence on T⁶.
-- **E6 highλ Geodesic Focusing:** High-frequency 
-  Laplacian modes of the E6 orbit graph concentrate 
-  along graph geodesics (z≈6, p<10⁻⁸ vs Random), 
-  robust to κ variation and graph connectivity control.
-- **Diffusive wavepacket spreading** in Coxeter 
-  highλ sector (α≈0.30): standing modes, not 
-  propagating particles.
-- **Monotonic IPR gradient** in E6 (ρ=1.0): 
-  ordered spectral hierarchy absent in Random.
+- **E6 highλ Geodesic Focusing:** High-frequency Laplacian modes of the E6 orbit graph concentrate along graph geodesics (z≈6, p<10⁻⁸ vs Random), robust to κ variation and graph connectivity control.
+- **Diffusive wavepacket spreading** in Coxeter highλ sector (α≈0.30): standing modes, not propagating particles. Robust result.
+- **Monotonic IPR gradient** in E6 (ρ=1.0): ordered spectral hierarchy absent in Random. Robust result.
+- **Weyl involution is a theorem, not an observation:** Coxeter exponents satisfy m_i + m_{r+1-i} = h always, forcing ω_i = ω_{h-i} and confining the orbit to a subtorus of dimension =n_unique_frequencies.
+  D_corr ≈ 3 for E6 is a mathematical consequence, not an empirical discovery.
 
 ### What is definitively ruled out
 
@@ -50,14 +47,15 @@
 - **d_s ≈ 4 as evidence of 4D spacetime** (it identifies 3D structures, not 4D).
 - Dark energy as geometric inevitability (λ_decay was hand-coded; E₆ irrelevant, p=0.90).
 - **τ ∝ h(Coxeter):** Memory time τ≈237 (Part VI) does not scale with Coxeter number across A6, E6, E7, E8. The τ/h≈20 ratio for E6 is coincidental. τ measures initial clustering decay, not algebraic memory.
-- **Ballistic photon-like propagation** from monostring 
-  graph (α≈0.30, diffusive; no constant c).
-- **Graph geodesic = null geodesic** (R²<0.1, 
-  no causal structure found).
-- **Winding numbers as E6-specific invariant** 
-  (~50% non-trivial for all algebras including Random).
-- **Betti β₁ as driver of geodesic focusing** 
-  (ρ=-0.8, p=0.20, ns).
+- **Ballistic photon-like propagation** from monostring graph (α≈0.30, diffusive; no constant c).
+- **Graph geodesic = null geodesic** (R²<0.1, no causal structure found).
+- **Winding numbers as E6-specific invariant** (~50% non-trivial for all algebras including Random).
+- **Betti β₁ as driver of geodesic focusing**  (ρ=-0.8, p=0.20, ns).
+- **z_geo ≈ 6 geodesic focusing (Part VIII):** identified in Part IX as a code artifact. Correct distance-matrix computation gives z ≈ 0 for all algebras including E6.
+- **PCA_ratio as Coxeter-specific signal:** explained by Weyl frequency degeneracy (ω_i = ω_{h-i}). Removing degenerate pairs gives PCA_ratio ≈ 1 for E6, identical
+  to random.
+- **Any Coxeter-specific observable after strict controls:** after matching rank, spread, and n_unique_frequencies, E6 sits at the ~50th percentile of random distributions (p > 0.1 for all metrics including D_corr, Lyapunov, torus fill, IPR).
+  
 
 ---
 
@@ -77,6 +75,9 @@
 12. **Part VIII — Steps 5–5c (first signal):** Switched to band-filtered quantum walk on the torus-corrected graph. **Discovered that high-frequency Laplacian modes (highλ) concentrate along graph geodesics in E6** (z ≈ 6 vs z ≈ 0.75 for Random). Confirmed over 29 random source-target pairs: p = 7 × 10⁻¹⁰. E6 highλ above threshold: 100%. Random: 20.7%.
 13. **Part VIII — Step 6 (wavepacket dynamics):** Constructed band-filtered wavepackets. Spreading is **diffusive, not ballistic** (α ≈ 0.30). No constant speed of light. The geodesic structure manifests as **standing modes**, not propagating excitations. Algebra comparison: Coxeter algebras (E6, A6, E8) all show z >> 2; Random shows z ≈ 0.
 14. **Part VIII — Step 6d (decisive control):** Discovered A6 had near-zero Fiedler value (≈ 0.006) — potential connectivity artifact. Matched all algebras to identical Fiedler ≈ 0.15. **Effect survives:** ANOVA F = 17.9, p = 7 × 10⁻⁹. E6 vs Random at matched connectivity: p = 6 × 10⁻⁶. **The geodesic focusing is driven by orbit geometry (D_corr ≈ 2.6), not graph connectivity.** First robust, reproducible structural signature of Coxeter-frequency monostrings.
+15. **Part IX — Steps 1–3 (z_geo artifact identified):** Attempted to reproduce z_geo ≈ 6 from Part VIII.  Correct implementation (distance matrix, not weight matrix) gives z ≈ 0 for ALL algebras. The Part VIII signal was a code artifact: shortest_path was computed on the weight matrix exp(−d²/2σ²) instead of the distance matrix d. **The geodesic focusing effect does not exist.**
+
+16. **Part IX — Steps 4–5 (PCA_ratio mechanism + final falsification):** PCA_ratio(Coxeter) >> Random (14,917 vs 1.11, p=0.000) appeared significant. Mechanism analysis showed it is entirely explained   by Weyl frequency degeneracy: E6 has exact pairs ω_i = ω_{h-i} by the Coxeter exponent identity m_i + m_{r+1-i} = h. Removing pairs → PCA_ratio ≈ 1. Strictest control (matched rank, spread, n_unique):   E6 at 48th percentile, p > 0.4 for all metrics. **The standard map formulation of the monostring hypothesis is falsified.**
 
 ---
 
@@ -92,6 +93,7 @@
 | 6 | [Part VI — Fragmentation](paper/monostring_part6_fragmentation.md) | **NEW:** Entropy crossover, memory time $\tau$, relational graph failures |
 | 7 |[Philosophical Foundations](paper/monostring_philosophy_en.md) | Speculative ontological context (optional) |
 | 8 | [Part VIII — Geodesic Fields](paper/monostring_part8_geodesic_fields.md) | Falsification path + confirmed E6 geodesic structure |
+| 9 | [Part IX — Final Falsification](paper/monostring_part9_falsification.md) | Artifact identification, PCA_ratio mechanism, complete scorecard |
 
 ---
 
@@ -104,7 +106,8 @@ monostring-hypothesis/
 │   ├── monostring_part3_spectral.md
 │   ├── monostring_part4_independent_verification.md
 │   ├── monostring_part5_resolution.md
-│   └── monostring_part6_fragmentation.md        ← NEW
+│   └── monostring_part6_fragmentation.md
+│   └── monostring_part9_falsification.md        ← NEW v9.0.0
 │
 ├── scripts/
 │   ├── part1/                    # v0–v7 (Lyapunov, symplectic)
@@ -112,13 +115,21 @@ monostring-hypothesis/
 │   ├── part3/                    # Spectral dimension (Weyl)
 │   ├── part4/                    # Graph cosmology v1–v7
 │   ├── part5/                    # Resolution (D_corr vs d_s)
-│   └── part6/                    ← NEW
+│   └── part6/
 │       ├── part6_dcorr_calibration_and_entropy.py
 │       ├── part6_long_time_falsification.py
 │       ├── part6_measure_tau_crossover.py
 │       ├── part6_final_summary.py
 │       └── archive_failed_hypotheses/
 │           └── (v1-v7: Kuramoto collapse, relative drift flaws)
+│   ├── part7/                    # τ ∝ h falsification
+│   ├── part8/                    # Geodesic fields (artifact documented)
+│   └── part9/                    ← NEW v9.0.0
+│       ├── part9_step1_dcorr_zgeo_regression.py
+│       ├── part9_step2_diagnostic.py
+│       ├── part9_step3_pca_anisotropy.py
+│       ├── part9_step4_mechanism.py
+│       └── part9_step5_controlled_comparison.py
 │
 ├── figures/
 │   ├── part1/
@@ -127,7 +138,7 @@ monostring-hypothesis/
 │   ├── part4/
 │   ├── part5/
 │   │   └── dcorr_vs_ds_scatter.png               # Part V Key Figure
-│   └── part6/                                    ← NEW
+│   └── part6/
 │       ├── monostring_part6_final_summary.png    # Part VI Scorecard
 │       └── monostring_fragmentation_v10.png      # Delta S(t) memory time
 │
@@ -164,6 +175,33 @@ The E₆ Coxeter orbit on T⁶ has correlation dimension D_corr = 3.021 ± 0.005
 The hypothesis that fragments entangle into emergent space failed (relative phase drift mathematically cancels frequencies). However, using absolute Shannon entropy revealed **The Entropy Paradox**: fragmentation creates *local order*. Daughters remember their E₆ origin for a characteristic time $\tau_{E6} \approx 237$ steps ($p < 0.0001$) before thermalizing. D_corr ≈ 3 is proven to depend on the *unordered set* of irrational frequencies.
 📄 [Full paper](paper/monostring_part6_fragmentation.md)
 
+### Part VII: τ ∝ h(Coxeter) — Falsified
+Tested memory time τ across A6 (h=7), E6 (h=12), E7 (h=18),
+E8 (h=30). τ does not scale with h. The ratio τ/h ≈ 20 for
+E6 is coincidental. τ measures initial clustering decay,
+not algebraic memory.
+
+### Part VIII: Emergent Geodesic Structure — Partially Revised
+Steps 1–4: collective mode dispersion R²=1.0 (tautology);
+no null-geodesic light cone (R²<0.1).
+Steps 5–6d: z≈6 geodesic focusing appeared confirmed
+(p<10⁻⁸, Fiedler-controlled). Revised in Part IX:
+signal was a code artifact.
+Robust survivors: diffusive wavepackets (α≈0.30),
+monotonic IPR gradient (ρ=1.0).
+📄 [Full paper](paper/monostring_part8_geodesic_fields.md)
+
+### Part IX: Final Falsification ← NEW v9.0.0
+z_geo ≈ 6 (Part VIII) identified as code artifact:
+correct distance matrix gives z ≈ 0 for all algebras.
+PCA_ratio explained by Weyl frequency degeneracy
+(ω_i = ω_{h-i}, consequence of m_i + m_{r+1-i} = h).
+After matching rank, spread, n_unique: E6 indistinguishable
+from random (p > 0.4 for all metrics).
+Standard map formulation of the monostring hypothesis
+is falsified.
+📄 [Full paper](paper/monostring_part9_falsification.md)
+
 ---
 
 ## Complete Scorecard
@@ -181,6 +219,9 @@ The hypothesis that fragments entangle into emergent space failed (relative phas
 | ω dominates K for graph topology | IV | ANOVA: 66% vs 3% |
 | Universal D ≈ 4 plateau (dissipative maps) | I | 13/13 algebras |
 | GUE spectral statistics | III | ⟨r⟩ = 0.529 |
+| **Weyl degeneracy → subtorus confinement** | **IX** | **Theorem: m_i+m_{r+1-i}=h always** |
+| **Diffusive wavepackets (α≈0.30)** | **VIII** | **Robust, not artifact** |
+| **Monotonic IPR gradient E6 (ρ=1.0)** | **VIII** | **Absent in Random** |
 
 ### ❌ Falsified
 
@@ -195,15 +236,18 @@ The hypothesis that fragments entangle into emergent space failed (relative phas
 | d_s(k-NN) measures manifold dim | V | T³→4.2, T⁴→1.1 at k=20 |
 | **d_s ≈ 4 → emergent 4D spacetime** | **V** | **It identifies 3D structures** |
 | Dark energy = graph geometry | V | λ(t) circular; E₆ irrelevant |
+| z_geo ≈ 6 geodesic focusing | VIII→IX | Code artifact: wrong distance matrix |
+| PCA_ratio as Coxeter signal | IX | Weyl degeneracy (ω_i=ω_{h-i}) |
+| Any Coxeter observable vs matched Random | IX | p>0.4 after rank/spread/degeneracy control |
 
 ### 🔍 Open Questions
 
 | Direction | Status | Key question |
 |-----------|--------|-------------|
-| Is $\tau \propto$ Coxeter number $h$? | Open (Part VI) | E₆ $\tau \approx 237 \approx 20 \times 12$. Test E₈ ($h=30$). |
-| Why D_corr(Rand) ≈ 5.5 (not 6)? | Open (Part VI) | Measure topology of uniform noise. |
-| Why D_corr ≈ 3 for all rank-6 orbits? | Observed | KAM theory |
-| Quantum walks → Dirac equation | Not implemented | Unitarity avoids dissipation |
+| Is $\tau \propto$ Coxeter number $h$? | ❌ Falsified (Part VII) | τ/h not universal across A6, E6, E7, E8 |
+| Cayley graph of W(E6): special spectral gap? | Open (post-IX) | Exact spectrum, no embedding artifacts |
+| Quantum spin chain with Temperley–Lieb structure | Open (post-IX) | Known mathematical connections to Coxeter |
+
 
 ---
 
@@ -228,6 +272,37 @@ python scripts/part6/part6_measure_tau_crossover.py
 ```
 Expected runtime: ~3 minutes.
 
+**Part IX (Final falsification — key artifact and mechanism):**
+```bash
+python scripts/part9/part9_step2_diagnostic.py        # z_geo artifact
+python scripts/part9/part9_step4_mechanism.py         # PCA_ratio mechanism
+python scripts/part9/part9_step5_controlled_comparison.py  # final scorecard
+```
+Expected runtime: ~5 minutes.
+
+---
+
+## 11. Citation — обновить title и note
+
+```bibtex
+@misc{lebedev2025monostring,
+  author       = {Lebedev, Igor},
+  title        = {The Monostring Hypothesis: Nine Computational Experiments
+                  That Killed One Path to Emergent Spacetime ---
+                  and Closed Four Others},
+  year         = {2025},
+  publisher    = {GitHub / Zenodo},
+  url          = {https://github.com/LebedevIV/monostring-hypothesis},
+  doi          = {10.5281/zenodo.18886047},
+  note         = {v9.0.0: Standard map formulation falsified.
+                  All Coxeter-specific signals explained by
+                  Weyl frequency degeneracy or code artifacts.}
+}
+```
+
+## 12. Acknowledgments — добавить Part IX в список Claude
+- Anthropic Claude (Opus, Sonnet 3.5/3.7, Sonnet 4) — critical analysis, adversarial falsification, metrology fixes, artifact identification (Parts I–IX)
+  
 ---
 
 ## Citation
