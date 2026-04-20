@@ -1,6 +1,6 @@
 # The Monostring Hypothesis
 
-**Ten Computational Experiments That Killed One Path to Emergent Spacetime — and Closed Five Others****
+**Eleven Computational Experiments That Killed One Path to Emergent Spacetime — and Closed Five Others**
 
 [![DOI: Paper](https://img.shields.io/badge/DOI-Paper%20(PDF)-blue.svg)](https://doi.org/10.5281/zenodo.18886047)
 [![DOI: Code](https://zenodo.org/badge/DOI/10.5281/zenodo.18890266.svg)](https://doi.org/10.5281/zenodo.18890266)
@@ -20,8 +20,9 @@
 | VII | τ ∝ h(Coxeter) cross-algebra test | ❌ **Falsified** (9 experiments) |
 | VIII | Emergent geodesic structure (Steps 1–6d) | ⚠️ **Revised**: z≈6 signal was code artifact (Part IX); diffusive wavepackets and IPR gradient remain real |
 | IX | Mechanism analysis + final falsification | ❌ **Falsified**: all Coxeter-specific signals explained by Weyl degeneracy, κ, or rank |
-| **X-A** | **Cayley graphs of Coxeter groups (Steps 1–3)** | ❌ **Tautology**: multiplicity structure = character table; λ₁→0 as |W|→∞ |
-| **X-B** | **XXZ spin chain with Coxeter parameters** | ❌ **Falsified**: all Δ(h)=−cos(π/h) give critical phase by theorem; no E6-specific signal |
+| X-A | Cayley graphs of Coxeter groups (Steps 1–3) | ❌ **Tautology**: multiplicity structure = character table; λ₁→0 as |W|→∞ |
+| X-B | XXZ spin chain with Coxeter parameters | ❌ **Falsified**: all Δ(h)=−cos(π/h) give critical phase by theorem; no E6-specific signal |
+| **XI** | **Quantum walk on Cayley graph of S₄** | ⚠️ **Borderline**: p=0.065 for coherence; mechanism trivial (group periodicity) |
 
 ### What survives
 
@@ -96,6 +97,7 @@
 15. **Part IX — Final falsification of standard map:** PCA_ratio explained by Weyl degeneracy. After matching rank, spread, n_unique: E6 at 48th percentile of random. Standard map formulation falsified.
 16. **Part X-A — Cayley graph of W(E6):** λ_max = 2 for all Coxeter groups (sign representation theorem). Multiplicity structure = irrep dimensions of W. Beautiful mathematics, but tautological: the spectrum IS the character table. λ₁ → 0 as |W| → ∞.
 17. **Part X-B — XXZ spin chain:** Δ(h) = −cos(π/h) for all Coxeter algebras satisfies |Δ| < 1 → critical phase by theorem. Mann-Whitney p=0.008 explained by Δ being closer to −1, not algebraic structure. Entanglement entropy: E6 ≈ A6 ≈ Random (< 2% difference). **Monostring hypothesis fully falsified across all tested mathematical frameworks.**
+18. **Part XI — Quantum walk on Cay(S₄):** Lower entropy S(t)=2.21 vs Random=2.64 (0th percentile), but p=0.065 and mechanism is group periodicity (recurrence of group orbits), not a physical signal. **Investigation complete. Monostring hypothesis falsified across all tested frameworks.**
 
 ---
 
@@ -292,12 +294,13 @@ with Temperley-Lieb structure (X-B).
 
 ### 🔍 Open Directions (post v10.0.0)
 
-| Direction | Description |
-|-----------|-------------|
-| Quantum walks on Cay(W(E6)) | Coherence survival vs random group |
-| Random Matrix Theory with Coxeter symmetry | GUE + W(E6) symmetry vs plain GUE |
-| Cellular automata from Dynkin diagrams | Computational universality test |
-| Publish as methodology paper | "How not to find physics in dynamical systems" |
+The monostring hypothesis is falsified across: standard map orbits (I–IX), Cayley graphs (X-A), XXZ spin chains (X-B), quantum walks (XI).
+
+Remaining mathematical facts (not falsified):
+- Weyl involution ω_i = ω_{h-i} (theorem)
+- D_corr = n_unique_frequencies (consequence)
+- Memory τ ≈ 237 for E6 daughters (p<0.0001)
+- Cayley spectrum = character table (Peter-Weyl)
 
 
 ---
