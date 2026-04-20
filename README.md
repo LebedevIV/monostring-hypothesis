@@ -1,6 +1,6 @@
 # The Monostring Hypothesis
 
-**Nine Computational Experiments That Killed One Path to Emergent Spacetime — and Closed Four Others**
+**Ten Computational Experiments That Killed One Path to Emergent Spacetime — and Closed Five Others****
 
 [![DOI: Paper](https://img.shields.io/badge/DOI-Paper%20(PDF)-blue.svg)](https://doi.org/10.5281/zenodo.18886047)
 [![DOI: Code](https://zenodo.org/badge/DOI/10.5281/zenodo.18890266.svg)](https://doi.org/10.5281/zenodo.18890266)
@@ -19,7 +19,9 @@
 | VI | Fragmentation & Memory Time (v1–v11) | ⚠️ **Partial**: Naive space emergence falsified, but **Memory Time ($\tau$) discovered** |
 | VII | τ ∝ h(Coxeter) cross-algebra test | ❌ **Falsified** (9 experiments) |
 | VIII | Emergent geodesic structure (Steps 1–6d) | ⚠️ **Revised**: z≈6 signal was code artifact (Part IX); diffusive wavepackets and IPR gradient remain real |
-| **IX** | **Mechanism analysis + final falsification** | ❌ **Falsified**: all Coxeter-specific signals explained by Weyl degeneracy, κ, or rank |
+| IX | Mechanism analysis + final falsification | ❌ **Falsified**: all Coxeter-specific signals explained by Weyl degeneracy, κ, or rank |
+| **X-A** | **Cayley graphs of Coxeter groups (Steps 1–3)** | ❌ **Tautology**: multiplicity structure = character table; λ₁→0 as |W|→∞ |
+| **X-B** | **XXZ spin chain with Coxeter parameters** | ❌ **Falsified**: all Δ(h)=−cos(π/h) give critical phase by theorem; no E6-specific signal |
 
 ### What survives
 
@@ -34,7 +36,12 @@
 - **Diffusive wavepacket spreading** in Coxeter highλ sector (α≈0.30): standing modes, not propagating particles. Robust result.
 - **Monotonic IPR gradient** in E6 (ρ=1.0): ordered spectral hierarchy absent in Random. Robust result.
 - **Weyl involution is a theorem, not an observation:** Coxeter exponents satisfy m_i + m_{r+1-i} = h always, forcing ω_i = ω_{h-i} and confining the orbit to a subtorus of dimension =n_unique_frequencies.
-  D_corr ≈ 3 for E6 is a mathematical consequence, not an empirical discovery.
+- D_corr ≈ 3 for E6 is a mathematical consequence, not an empirical discovery.
+- **Weyl involution is a theorem:** m_i + m_{r+1-i} = h
+  for all Coxeter exponents, forcing ω_i = ω_{h-i} and
+  confining orbits to subtori of dim = n_unique_frequencies.
+  D_corr = n_unique is a mathematical consequence, not
+  an empirical discovery.  
 
 ### What is definitively ruled out
 
@@ -55,6 +62,17 @@
 - **PCA_ratio as Coxeter-specific signal:** explained by Weyl frequency degeneracy (ω_i = ω_{h-i}). Removing degenerate pairs gives PCA_ratio ≈ 1 for E6, identical
   to random.
 - **Any Coxeter-specific observable after strict controls:** after matching rank, spread, and n_unique_frequencies, E6 sits at the ~50th percentile of random distributions (p > 0.1 for all metrics including D_corr, Lyapunov, torus fill, IPR).
+- **Cayley graph λ₁ as Coxeter signal:** λ₁ → 0 as
+  |W| → ∞ for any fixed generator set; not special
+  for Coxeter groups vs random groups of same order.
+- **Spectral multiplicity as new physics:** multiplicity
+  structure of Cay(W) = irrep dimensions of W (character
+  table). Mathematical tautology, not physical content.
+- **XXZ Coxeter points as special:** Δ(h) = −cos(π/h)
+  gives |Δ| < 1 for all h → critical phase by theorem.
+  No distinction between E6, A6, E8, or random |Δ| < 1.
+- **Dynkin-weighted spin chain:** gap = 0 for all
+  coupling patterns at Δ(E6); no Dynkin-specific signal.
   
 
 ---
@@ -75,9 +93,9 @@
 12. **Part VIII — Steps 5–5c (first signal):** Switched to band-filtered quantum walk on the torus-corrected graph. **Discovered that high-frequency Laplacian modes (highλ) concentrate along graph geodesics in E6** (z ≈ 6 vs z ≈ 0.75 for Random). Confirmed over 29 random source-target pairs: p = 7 × 10⁻¹⁰. E6 highλ above threshold: 100%. Random: 20.7%.
 13. **Part VIII — Step 6 (wavepacket dynamics):** Constructed band-filtered wavepackets. Spreading is **diffusive, not ballistic** (α ≈ 0.30). No constant speed of light. The geodesic structure manifests as **standing modes**, not propagating excitations. Algebra comparison: Coxeter algebras (E6, A6, E8) all show z >> 2; Random shows z ≈ 0.
 14. **Part VIII — Step 6d (decisive control):** Discovered A6 had near-zero Fiedler value (≈ 0.006) — potential connectivity artifact. Matched all algebras to identical Fiedler ≈ 0.15. **Effect survives:** ANOVA F = 17.9, p = 7 × 10⁻⁹. E6 vs Random at matched connectivity: p = 6 × 10⁻⁶. **The geodesic focusing is driven by orbit geometry (D_corr ≈ 2.6), not graph connectivity.** First robust, reproducible structural signature of Coxeter-frequency monostrings.
-15. **Part IX — Steps 1–3 (z_geo artifact identified):** Attempted to reproduce z_geo ≈ 6 from Part VIII.  Correct implementation (distance matrix, not weight matrix) gives z ≈ 0 for ALL algebras. The Part VIII signal was a code artifact: shortest_path was computed on the weight matrix exp(−d²/2σ²) instead of the distance matrix d. **The geodesic focusing effect does not exist.**
-
-16. **Part IX — Steps 4–5 (PCA_ratio mechanism + final falsification):** PCA_ratio(Coxeter) >> Random (14,917 vs 1.11, p=0.000) appeared significant. Mechanism analysis showed it is entirely explained   by Weyl frequency degeneracy: E6 has exact pairs ω_i = ω_{h-i} by the Coxeter exponent identity m_i + m_{r+1-i} = h. Removing pairs → PCA_ratio ≈ 1. Strictest control (matched rank, spread, n_unique):   E6 at 48th percentile, p > 0.4 for all metrics. **The standard map formulation of the monostring hypothesis is falsified.**
+15. **Part IX — Final falsification of standard map:** PCA_ratio explained by Weyl degeneracy. After matching rank, spread, n_unique: E6 at 48th percentile of random. Standard map formulation falsified.
+16. **Part X-A — Cayley graph of W(E6):** λ_max = 2 for all Coxeter groups (sign representation theorem). Multiplicity structure = irrep dimensions of W. Beautiful mathematics, but tautological: the spectrum IS the character table. λ₁ → 0 as |W| → ∞.
+17. **Part X-B — XXZ spin chain:** Δ(h) = −cos(π/h) for all Coxeter algebras satisfies |Δ| < 1 → critical phase by theorem. Mann-Whitney p=0.008 explained by Δ being closer to −1, not algebraic structure. Entanglement entropy: E6 ≈ A6 ≈ Random (< 2% difference). **Monostring hypothesis fully falsified across all tested mathematical frameworks.**
 
 ---
 
@@ -94,6 +112,8 @@
 | 7 |[Philosophical Foundations](paper/monostring_philosophy_en.md) | Speculative ontological context (optional) |
 | 8 | [Part VIII — Geodesic Fields](paper/monostring_part8_geodesic_fields.md) | Falsification path + confirmed E6 geodesic structure |
 | 9 | [Part IX — Final Falsification](paper/monostring_part9_falsification.md) | Artifact identification, PCA_ratio mechanism, complete scorecard |
+| 9 | [Part IX — Final Falsification](paper/monostring_part9_falsification.md) | Artifact identification, PCA_ratio mechanism, complete scorecard |
+| 10 | [Part X — Cayley Graphs and Spin Chains](paper/monostring_part10_cayley_spinchain.md) | Group theory and quantum physics tests; final negative result |
 
 ---
 
@@ -107,7 +127,8 @@ monostring-hypothesis/
 │   ├── monostring_part4_independent_verification.md
 │   ├── monostring_part5_resolution.md
 │   └── monostring_part6_fragmentation.md
-│   └── monostring_part9_falsification.md        ← NEW v9.0.0
+│   └── monostring_part9_falsification.md        
+│   └── monostring_part10_cayley_spinchain.md     
 │
 ├── scripts/
 │   ├── part1/                    # v0–v7 (Lyapunov, symplectic)
@@ -130,6 +151,11 @@ monostring-hypothesis/
 │       ├── part9_step3_pca_anisotropy.py
 │       ├── part9_step4_mechanism.py
 │       └── part9_step5_controlled_comparison.py
+│   └── part10/                                   
+│       ├── part10_step1_cayley_small_groups.py
+│       ├── part10_step2_generators_scaling.py
+│       ├── part10_step3_spectral_fingerprint.py
+│       └── part10_planb_xxz_spinchain.py
 │
 ├── figures/
 │   ├── part1/
@@ -202,6 +228,26 @@ Standard map formulation of the monostring hypothesis
 is falsified.
 📄 [Full paper](paper/monostring_part9_falsification.md)
 
+### Part X: Cayley Graphs and XXZ Spin Chains — Falsified ← NEW v10.0.0
+
+**Plan A (Cayley graphs):** Coxeter Cayley graphs have
+frac_degenerate = 0.80–0.92 vs Random = 0.00. However,
+this is a tautology: eigenvalue multiplicities = irrep
+dimensions of W (character table). No new physics.
+λ₁ → 0 as |W| → ∞: Coxeter groups are poor expanders.
+
+**Plan B (XXZ spin chain):** At Δ = −cos(π/h), all Coxeter
+algebras satisfy |Δ| < 1 → critical phase (theorem, not
+observation). Entanglement entropy and spectral gap show
+< 2% difference between E6, A6, and random |Δ| < 1.
+Dynkin-weighted coupling gives gap = 0 universally.
+
+**Conclusion:** The monostring hypothesis is falsified
+across all tested frameworks: standard map orbits (I–IX),
+Cayley graphs of Weyl groups (X-A), and XXZ spin chains
+with Temperley-Lieb structure (X-B).
+📄 [Full paper](paper/monostring_part10_cayley_spinchain.md)
+
 ---
 
 ## Complete Scorecard
@@ -239,14 +285,19 @@ is falsified.
 | z_geo ≈ 6 geodesic focusing | VIII→IX | Code artifact: wrong distance matrix |
 | PCA_ratio as Coxeter signal | IX | Weyl degeneracy (ω_i=ω_{h-i}) |
 | Any Coxeter observable vs matched Random | IX | p>0.4 after rank/spread/degeneracy control |
+| Cayley graph λ₁ as Coxeter signal | X-A | λ₁→0 as \|W\|→∞; not special |
+| Spectral multiplicity as new physics | X-A | Tautology: mult = char table |
+| XXZ Coxeter Δ as special | X-B | \|Δ(h)\|<1 → critical by theorem |
+| Dynkin-weighted spin chain | X-B | gap=0 for all configs |
 
-### 🔍 Open Questions
+### 🔍 Open Directions (post v10.0.0)
 
-| Direction | Status | Key question |
-|-----------|--------|-------------|
-| Is $\tau \propto$ Coxeter number $h$? | ❌ Falsified (Part VII) | τ/h not universal across A6, E6, E7, E8 |
-| Cayley graph of W(E6): special spectral gap? | Open (post-IX) | Exact spectrum, no embedding artifacts |
-| Quantum spin chain with Temperley–Lieb structure | Open (post-IX) | Known mathematical connections to Coxeter |
+| Direction | Description |
+|-----------|-------------|
+| Quantum walks on Cay(W(E6)) | Coherence survival vs random group |
+| Random Matrix Theory with Coxeter symmetry | GUE + W(E6) symmetry vs plain GUE |
+| Cellular automata from Dynkin diagrams | Computational universality test |
+| Publish as methodology paper | "How not to find physics in dynamical systems" |
 
 
 ---
@@ -282,27 +333,29 @@ Expected runtime: ~5 minutes.
 
 ---
 
-## 11. Citation — обновить title и note
+## 11. Citation
 
 ```bibtex
 @misc{lebedev2025monostring,
   author       = {Lebedev, Igor},
-  title        = {The Monostring Hypothesis: Nine Computational Experiments
+  title        = {The Monostring Hypothesis: Ten Computational Experiments
                   That Killed One Path to Emergent Spacetime ---
-                  and Closed Four Others},
+                  and Closed Five Others},
   year         = {2025},
   publisher    = {GitHub / Zenodo},
   url          = {https://github.com/LebedevIV/monostring-hypothesis},
   doi          = {10.5281/zenodo.18886047},
-  note         = {v9.0.0: Standard map formulation falsified.
-                  All Coxeter-specific signals explained by
-                  Weyl frequency degeneracy or code artifacts.}
+  note         = {v10.0.0: Complete falsification across standard map,
+                  Cayley graphs, and XXZ spin chains.}
 }
 ```
+---
 
-## 12. Acknowledgments — добавить Part IX в список Claude
-- Anthropic Claude (Opus, Sonnet 3.5/3.7, Sonnet 4) — critical analysis, adversarial falsification, metrology fixes, artifact identification (Parts I–IX)
-  
+**Acknowledgments:**
+
+- Anthropic Claude (Opus, Sonnet 3.5/3.7, Sonnet 4) —
+  critical analysis, adversarial falsification, artifact
+  identification, group theory and spin chain tests (Parts I–X)
 ---
 
 ## Citation
