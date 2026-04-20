@@ -188,18 +188,3 @@ python scripts/part10/part10_planb_xxz_spinchain.py
 
 Expected runtime: ~10 minutes total.
 All results deterministic (fixed seeds).
-```
-
----
-
-### 3. Скрипты в `scripts/part10/`
-
-Сохранить четыре файла из этого чата:
-
-```
-scripts/part10/
-├── part10_step1_cayley_small_groups.py    ← Part X Step 1
-├── part10_step2_generators_scaling.py     ← Part X Step 2
-├── part10_step3_spectral_fingerprint.py   ← Part X Step 3
-└── part10_planb_xxz_spinchain.py          ← Part X Plan B
-```
