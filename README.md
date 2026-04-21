@@ -1,6 +1,6 @@
 # The Monostring Hypothesis
 
-**Eleven Computational Experiments That Killed One Path to Emergent Spacetime — and Closed Five Others**
+****Sixteen Computational Experiments Across Six Mathematical Frameworks — Complete Falsification of Classical Coxeter Dynamics as a Model of Inflation and Emergent Spacetime****
 
 [![DOI: Paper](https://img.shields.io/badge/DOI-Paper%20(PDF)-blue.svg)](https://doi.org/10.5281/zenodo.18886047)
 [![DOI: Code](https://zenodo.org/badge/DOI/10.5281/zenodo.18890266.svg)](https://doi.org/10.5281/zenodo.18890266)
@@ -12,17 +12,22 @@
 | Part | Topic | Status |
 |------|-------|--------|
 | I | Dimensional reduction (Lyapunov compactification) | ❌ **Falsified** (symplectic test) |
-| II | Gauge Higgs mechanism + causal sets | ❌ **Trivial** (null model) / ⚠️ parameter-dependent |
-| III | Spectral dimension (Weyl law) | ⚠️ Real effect, but d_s ≠ 4.0 and not tested for size dependence |
-| IV | Independent verification (graph cosmology v1–v7) | ❌ d_s depends on N; dark energy claim is circular |
-| V | Resolution (Part IV+ v1–v8) | ❌ **D_corr(E₆) ≈ 3.02; d_s ≈ 4 is a 3D k-NN effect** |
-| VI | Fragmentation & Memory Time (v1–v11) | ⚠️ **Partial**: Naive space emergence falsified, but **Memory Time ($\tau$) discovered** |
+| II | Gauge Higgs mechanism + causal sets | ❌ **Trivial** (null model) |
+| III | Spectral dimension (Weyl law) | ⚠️ Real effect, d_s ≠ 4.0 |
+| IV | Independent verification (graph cosmology) | ❌ d_s depends on N; dark energy circular |
+| V | Resolution (D_corr vs d_s) | ❌ **D_corr(E₆)≈3.02 is 3D artifact** |
+| VI | Fragmentation & Memory Time | ⚠️ **τ≈237 survives (p<0.0001)** |
 | VII | τ ∝ h(Coxeter) cross-algebra test | ❌ **Falsified** (9 experiments) |
-| VIII | Emergent geodesic structure (Steps 1–6d) | ⚠️ **Revised**: z≈6 signal was code artifact (Part IX); diffusive wavepackets and IPR gradient remain real |
-| IX | Mechanism analysis + final falsification | ❌ **Falsified**: all Coxeter-specific signals explained by Weyl degeneracy, κ, or rank |
-| X-A | Cayley graphs of Coxeter groups (Steps 1–3) | ❌ **Tautology**: multiplicity structure = character table; λ₁→0 as |W|→∞ |
-| X-B | XXZ spin chain with Coxeter parameters | ❌ **Falsified**: all Δ(h)=−cos(π/h) give critical phase by theorem; no E6-specific signal |
-| **XI** | **Quantum walk on Cayley graph of S₄** | ⚠️ **Borderline**: p=0.065 for coherence; mechanism trivial (group periodicity) |
+| VIII | Emergent geodesic structure | ⚠️ z≈6 artifact; diffusive α≈0.30 survives |
+| IX | Mechanism analysis + final falsification | ❌ **Weyl degeneracy explains all signals** |
+| X-A | Cayley graphs of Coxeter groups | ❌ **Tautology** (character table) |
+| X-B | XXZ spin chain with Coxeter parameters | ❌ **Critical phase by theorem** |
+| XI | Quantum walk on Cayley graph of S₄ | ⚠️ p=0.065; mechanism trivial |
+| **XII** | **Emergent inflaton V_eff from mode interactions** | ❌ **p>0.3 at all κ (N=200 controls)** |
+| **XIII** | **KAM thresholds κ_c(algebra)** | ❌ **r(h,κ_c)=−0.47; H₀ holds** |
+| **XIV** | **Complex Coxeter frequencies ω+iΓ** | ❌ **Σcos(πmᵢ/h)=0 by theorem** |
+| **XV** | **Blind search: inflation potentials V(φ)** | ❌ **n_s systematically +2.4σ above Planck** |
+| **XVI** | **Cartan matrix dynamics** | ❌ **p=0.15; E8 ≈ random matrices** |
 
 ### What survives
 
@@ -43,6 +48,25 @@
   confining orbits to subtori of dim = n_unique_frequencies.
   D_corr = n_unique is a mathematical consequence, not
   an empirical discovery.  
+
+## What Survives (complete list)
+
+| Finding | Part | Evidence |
+|---------|------|----------|
+| D_corr(E₆) ≈ 3.02 (quasi-3D orbit) | V, VI | Reproduced, auto r-range |
+| D_corr depends on Set, not Order | VI | Shuffled E₆ yields 3.05 |
+| Memory Time τ ≈ 237 (E6 daughters) | VI | p<0.0001, σ-independent |
+| Arrow of Time via Fragmentation | VI | Linear entropy R²>0.3 |
+| Weyl involution theorem | IX | m_i+m_{r+1-i}=h always |
+| Diffusive wavepackets α≈0.30 | VIII | Robust, not artifact |
+| Monotonic IPR gradient E6 ρ=1.0 | VIII | Absent in Random |
+| Cayley spectrum = character table | X-A | Peter-Weyl theorem |
+| \|Δ(h)\|<1 → critical phase XXZ | X-B | Bethe ansatz theorem |
+| **Σcos(πmᵢ/h) = 0 for all Coxeter** | **XIV** | **Weyl involution theorem** |
+| **det(C_E8) = 1 (unimodular)** | **XVI** | **Exact: min_eig=0.011** |
+| **n_s(Coxeter V~φ^α) > Planck** | **XV** | **+2.4σ systematic bias** |
+
+All surviving results are **mathematical theorems or reproducible observations**, not new physics signals.
 
 ### What is definitively ruled out
 
@@ -74,6 +98,19 @@
   No distinction between E6, A6, E8, or random |Δ| < 1.
 - **Dynkin-weighted spin chain:** gap = 0 for all
   coupling patterns at Δ(E6); no Dynkin-specific signal.
+
+  *(Parts I–XI — see v11.0.0 for details)*
+
+**New in Parts XII–XVI:**
+
+| Claim | Part | How falsified |
+|-------|------|---------------|
+| Emergent V_eff flat enough for slow-roll | XII | p>0.3, N=200 rank-matched controls |
+| KAM threshold κ_c ∝ h(Coxeter) | XIII | r(h,κ_c)=−0.47; G2 trivial resonance |
+| Complex ω → inflation via Im(ω)>0 | XIV | Σcos=0 by Weyl theorem; total Γ=0 |
+| Coxeter potential V~φ^(2m/h) → Planck n_s | XV | n_s=0.975±0.004 vs Planck 0.965 |
+| Starobinsky×Coxeter corrections | XV | 0.16% winners < 0.68% random |
+| Cartan matrix H gives inflation | XVI | p=0.15; spread_rate E8≈random |
   
 
 ---
@@ -98,8 +135,79 @@
 16. **Part X-A — Cayley graph of W(E6):** λ_max = 2 for all Coxeter groups (sign representation theorem). Multiplicity structure = irrep dimensions of W. Beautiful mathematics, but tautological: the spectrum IS the character table. λ₁ → 0 as |W| → ∞.
 17. **Part X-B — XXZ spin chain:** Δ(h) = −cos(π/h) for all Coxeter algebras satisfies |Δ| < 1 → critical phase by theorem. Mann-Whitney p=0.008 explained by Δ being closer to −1, not algebraic structure. Entanglement entropy: E6 ≈ A6 ≈ Random (< 2% difference). **Monostring hypothesis fully falsified across all tested mathematical frameworks.**
 18. **Part XI — Quantum walk on Cay(S₄):** Lower entropy S(t)=2.21 vs Random=2.64 (0th percentile), but p=0.065 and mechanism is group periodicity (recurrence of group orbits), not a physical signal. **Investigation complete. Monostring hypothesis falsified across all tested frameworks.**
+19. **Part XII (Emergent V_eff):** Treated one Coxeter mode as inflaton φ₁; computed V_eff(φ₁) from interaction with remaining modes. Steps 1–5 with N=200 rank-matched controls. E8 flat_frac p=0.050
+    at κ=0.05, but p>0.3 at all other κ. Step 4 identified artifact: single random control seed=999 gave ff=0.500 vs true mean 0.184. **H₀ holds.**
+20. **Part XIII (KAM thresholds):** Computed maximum Lyapunov exponent λ_max(κ) for E8, E6, E7, A6, F4, G2 with N=200 controls each. κ_c(E8)=1.027 vs random mean 1.045±0.132. r(h,κ_c)=−0.47. G2 anomaly (κ_c=2.0) explained by ω₁=ω₂=1.0 (trivial resonance). **H₀ holds.**
+21. **Part XIV (Complex frequencies):** Analytically showed Γ_total = 2sinh(πε/h)·Σcos(πmᵢ/h) = 0 for ALL Coxeter algebras. Consequence of Weyl involution m_i+m_{r+1-i}=h → cos-cancellation. **Closed analytically by theorem.**
+22. **Part XV (Blind search V(φ)):** 50,000 random weight vectors for V=Σwᵢφ^(2mᵢ/h). Zero winners in Planck 1σ band [0.960,0.969] for any algebra. Systematic bias: n_s(E8)=0.975±0.004, offset +2.4σ above Planck. Modified forms (Starobinsky× Coxeter, hilltop, axion-like): E8 wins 0.16% vs random 0.68%. **H₀ holds.**
+23. **Part XVI (Cartan matrix dynamics):** Replaced standard map with Hamiltonian H=Σpᵢ²/2+ΣCᵢⱼ cos(φᵢ−φⱼ). Key property: det(C_E8)=1, min_eig=0.011 (near-critical). Phase spread_rate E8=0.0020 vs random 0.0015±0.0023 at κ=1.0; p=0.15. PC1 growth 0.004/window → 3.85 e-folds per 10⁵ steps (need >60). **H₀ holds.**
 
 ---
+
+## Key Mathematical Discoveries (Theorems)
+
+These were found *during* falsification attempts:
+
+1. Weyl involution:
+   m_i + m_{r+1-i} = h  for all Coxeter exponents
+   → ω_i = ω_{h-i}  (frequency pairing)
+   → orbit confined to subtorus dim = n_unique_freq
+   → D_corr = n_unique (consequence, not discovery)
+
+2. Cosine cancellation:
+   Σᵢ cos(πmᵢ/h) = 0  for ALL Coxeter algebras
+   → total inflation rate Γ = 0 for complex-ω model
+   → growing modes exactly cancelled by decaying modes
+
+3. E8 Cartan unimodularity:
+   det(C_E8) = 1  (unique among exceptional algebras)
+   min_eigenvalue = 0.011  (near-singular)
+   → E8 is dynamically near-critical
+
+4. KAM criticality:
+   |Δ(h)| = |cos(π/h)| < 1 for all finite h
+   → ALL Coxeter algebras in critical XXZ phase
+   → no Coxeter-specific signal possible
+
+5. Spectral tautology:
+   Spectrum(Cay(W, S)) = character table of W
+   → Peter-Weyl theorem; no new physics content
+
+---
+
+## Artifact Catalog (complete)
+
+# 1. Always use toric embedding:
+X = np.concatenate([np.cos(orbit), np.sin(orbit)], axis=1)
+
+# 2. Always use distance matrix for shortest_path:
+D = shortest_path(C_distances)   # NOT A_weights
+
+# 3. Control Weyl degeneracy:
+n_unique = len(np.unique(np.round(omegas, 6)))
+# Match n_unique in controls!
+
+# 4. N ≥ 100 controls from the start:
+# Single seed can give 3x inflated effect (Part XII Step 4)
+
+# 5. Bonferroni correction for multiple algebras:
+p_corrected = p_raw * n_algebras_tested
+
+# 6. Rank-match controls:
+# E8 (rank=8) vs random rank=8, NOT random rank=6
+
+# 7. Check automatic "SIGNAL" criteria:
+# total_wins > 500 is NOT a signal criterion
+# Requires: wins(Coxeter) >> wins(rank-matched random)
+
+# 8. n_s from power-law potentials:
+# V ~ phi^alpha ALWAYS gives n_s > Planck for alpha < 2
+# Systematic bias, not algebra-specific
+
+# 9. Single control seed artifact:
+# seed=999 gave rand_ff=0.500 vs true mean 0.184
+# Always run N>=100 controls before claiming signal
+   
 
 ## Recommended Reading Order
 
@@ -131,6 +239,7 @@ monostring-hypothesis/
 │   └── monostring_part6_fragmentation.md
 │   └── monostring_part9_falsification.md        
 │   └── monostring_part10_cayley_spinchain.md     
+│   └── monostring_parts12_16_inflation.md
 │
 ├── scripts/
 │   ├── part1/                    # v0–v7 (Lyapunov, symplectic)
@@ -158,6 +267,17 @@ monostring-hypothesis/
 │       ├── part10_step2_generators_scaling.py
 │       ├── part10_step3_spectral_fingerprint.py
 │       └── part10_planb_xxz_spinchain.py
+│   └── part12_16/
+│       ├── part12_step1_emergent_veff.py
+│       ├── part12_step2_verification.py
+│       ├── part12_step3_symmetry.py
+│       ├── part12_step4_mechanism.py
+│       ├── part12_step5_kappa_scan.py
+│       ├── part13_kam_thresholds.py
+│       ├── part14_complex_freq.py
+│       ├── part15_blind_search.py
+│       ├── part15_step2_modified.py
+│       └── part16_cartan.py
 │
 ├── figures/
 │   ├── part1/
@@ -292,16 +412,29 @@ with Temperley-Lieb structure (X-B).
 | XXZ Coxeter Δ as special | X-B | \|Δ(h)\|<1 → critical by theorem |
 | Dynkin-weighted spin chain | X-B | gap=0 for all configs |
 
-### 🔍 Open Directions (post v10.0.0)
+## Open Directions
 
-The monostring hypothesis is falsified across: standard map orbits (I–IX), Cayley graphs (X-A), XXZ spin chains (X-B), quantum walks (XI).
+The classical monostring hypothesis is falsified across:
+- Standard map orbits (Parts I–IX)
+- Cayley graphs of Weyl groups (Part X-A)
+- XXZ spin chains (Part X-B)
+- Quantum walks (Part XI)
+- Inflation potentials (Parts XII–XV)
+- Cartan matrix Hamiltonians (Part XVI)
 
-Remaining mathematical facts (not falsified):
-- Weyl involution ω_i = ω_{h-i} (theorem)
-- D_corr = n_unique_frequencies (consequence)
-- Memory τ ≈ 237 for E6 daughters (p<0.0001)
-- Cayley spectrum = character table (Peter-Weyl)
+**Untested (require different mathematical framework):**
 
+1. **Quantum monostring:** |ψ⟩ on E8 root lattice;
+   quantum fluctuations → inflation via Bunch-Davies
+   vacuum. Requires QFT on curved space formalism.
+
+2. **E8 gauge unification (Lisi 2007):** Concrete
+   predictions for SM particle assignments. Our
+   falsification methodology directly applicable.
+
+3. **Mutual information between Coxeter modes:**
+   I(φ₁:φⱼ) — untested, ~15% chance of signal.
+   1-day experiment (Direction #11 from master plan).
 
 ---
 
@@ -336,20 +469,20 @@ Expected runtime: ~5 minutes.
 
 ---
 
-## 11. Citation
+## Citation
 
 ```bibtex
 @misc{lebedev2025monostring,
   author       = {Lebedev, Igor},
-  title        = {The Monostring Hypothesis: Ten Computational Experiments
-                  That Killed One Path to Emergent Spacetime ---
-                  and Closed Five Others},
+  title        = {The Monostring Hypothesis: Sixteen
+                  Computational Experiments Across Six
+                  Mathematical Frameworks},
   year         = {2025},
   publisher    = {GitHub / Zenodo},
   url          = {https://github.com/LebedevIV/monostring-hypothesis},
   doi          = {10.5281/zenodo.18886047},
-  note         = {v10.0.0: Complete falsification across standard map,
-                  Cayley graphs, and XXZ spin chains.}
+  note         = {v12.0.0: Complete falsification including
+                  inflation search (Parts XII-XVI).}
 }
 ```
 ---
@@ -380,15 +513,10 @@ Expected runtime: ~5 minutes.
 
 ## License
 
-- Paper and documentation: CC-BY 4.0
-- Code: MIT License
+Paper and documentation: CC-BY 4.0 | Code: MIT
 
 ## Acknowledgments
 
-This research was conducted as an exercise in AI-assisted theoretical physics. The human author provided the hypothesis and philosophical direction; AI collaborators provided implementations, critical analysis, and falsifying tests.
-
-*In the spirit of Open Science, we have included the `archive_failed_hypotheses/` directory in Part VI. It documents our initial failed attempts to model space via subcritical Kuramoto coupling and relative phase drift, demonstrating precisely how these mechanisms were mathematically falsified before we arrived at the correct absolute entropy metric.*
-
 **AI collaborators:**
-- Google Gemini 3.1 Pro — initial mathematical implementation (Part I, v0)
-- Anthropic Claude (Opus & Sonnet 3.5/3.7) — critical analysis, adversarial falsification, metrology fixes (Parts I–VI)
+- Google Gemini 3.1 Pro — initial implementation (Part I v0)
+- Anthropic Claude (Opus, Sonnet 3.5/3.7, Sonnet 4) — critical analysis, falsification, Parts I–XVI
