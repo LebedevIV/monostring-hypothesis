@@ -1,6 +1,6 @@
 # The Monostring Hypothesis
 
-****Sixteen Computational Experiments Across Six Mathematical Frameworks — Complete Falsification of Classical Coxeter Dynamics as a Model of Inflation and Emergent Spacetime****
+**Seventeen Computational Experiments Across Six Mathematical Frameworks — Complete Falsification**
 
 [![DOI: Paper](https://img.shields.io/badge/DOI-Paper%20(PDF)-blue.svg)](https://doi.org/10.5281/zenodo.18886047)
 [![DOI: Code](https://zenodo.org/badge/DOI/10.5281/zenodo.18890266.svg)](https://doi.org/10.5281/zenodo.18890266)
@@ -23,11 +23,23 @@
 | X-A | Cayley graphs of Coxeter groups | ❌ **Tautology** (character table) |
 | X-B | XXZ spin chain with Coxeter parameters | ❌ **Critical phase by theorem** |
 | XI | Quantum walk on Cayley graph of S₄ | ⚠️ p=0.065; mechanism trivial |
-| **XII** | **Emergent inflaton V_eff from mode interactions** | ❌ **p>0.3 at all κ (N=200 controls)** |
-| **XIII** | **KAM thresholds κ_c(algebra)** | ❌ **r(h,κ_c)=−0.47; H₀ holds** |
-| **XIV** | **Complex Coxeter frequencies ω+iΓ** | ❌ **Σcos(πmᵢ/h)=0 by theorem** |
-| **XV** | **Blind search: inflation potentials V(φ)** | ❌ **n_s systematically +2.4σ above Planck** |
-| **XVI** | **Cartan matrix dynamics** | ❌ **p=0.15; E8 ≈ random matrices** |
+| XII | Emergent inflaton V_eff from mode interactions | ❌ **p>0.3 at all κ (N=200 controls)** |
+| XIII | KAM thresholds κ_c(algebra | ❌ **r(h,κ_c)=−0.47; H₀ holds** |
+| XIV | Complex Coxeter frequencies ω+iΓ | ❌ **Σcos(πmᵢ/h)=0 by theorem** |
+| XV | Blind search: inflation potentials V(φ | ❌ **n_s systematically +2.4σ above Planck** |
+| XVI | Cartan matrix dynamics | ❌ **p=0.15; E8 ≈ random matrices** |
+| **XVII** | **Mutual information** | ❌ **98.9% Weyl artifact** |
+
+---
+
+## Final Scorecard
+
+```
+17 experiments    →  0 surviving physical signals
+6 frameworks      →  all falsified
+6 theorems found  →  valid mathematics
+10 artifacts      →  documented and explained
+```
 
 ### What survives
 
@@ -47,7 +59,8 @@
   for all Coxeter exponents, forcing ω_i = ω_{h-i} and
   confining orbits to subtori of dim = n_unique_frequencies.
   D_corr = n_unique is a mathematical consequence, not
-  an empirical discovery.  
+  an empirical discovery.
+  
 
 ## What Survives (complete list)
 
@@ -62,11 +75,22 @@
 | Monotonic IPR gradient E6 ρ=1.0 | VIII | Absent in Random |
 | Cayley spectrum = character table | X-A | Peter-Weyl theorem |
 | \|Δ(h)\|<1 → critical phase XXZ | X-B | Bethe ansatz theorem |
-| **Σcos(πmᵢ/h) = 0 for all Coxeter** | **XIV** | **Weyl involution theorem** |
-| **det(C_E8) = 1 (unimodular)** | **XVI** | **Exact: min_eig=0.011** |
-| **n_s(Coxeter V~φ^α) > Planck** | **XV** | **+2.4σ systematic bias** |
+| Σcos(πmᵢ/h) = 0 for all Coxeter | XIV | Weyl involution theorem |
+| det(C_E8) = 1 (unimodular) | XVI | Exact: min_eig=0.011 |
+| n_s(Coxeter V~φ^α) > Planck | XV | +2.4σ systematic bias |
 
-All surviving results are **mathematical theorems or reproducible observations**, not new physics signals.
+| Finding | Part | Type |
+|---------|------|------|
+| τ≈237 for E6 daughters (p<0.0001) | VI | Empirical |
+| Diffusive wavepackets α≈0.30 | VIII | Empirical |
+| Weyl involution: mᵢ+m_{r+1-i}=h | IX | Theorem |
+| Σcos(πmᵢ/h)=0 all Coxeter | XIV | Theorem |
+| det(C_E8)=1, min_eig=0.011 | XVI | Theorem |
+| \|Δ(h)\|<1 → critical XXZ | X-B | Theorem |
+| Spec(Cay(W))=character table | X-A | Theorem |
+| TC(Coxeter)=n_pairs×H_max | XVII | Theorem |
+
+All surviving results are mathematical theorems or reproducible observations without physical interpretation as emergent spacetime or inflation.
 
 ### What is definitively ruled out
 
@@ -141,6 +165,9 @@ All surviving results are **mathematical theorems or reproducible observations**
 21. **Part XIV (Complex frequencies):** Analytically showed Γ_total = 2sinh(πε/h)·Σcos(πmᵢ/h) = 0 for ALL Coxeter algebras. Consequence of Weyl involution m_i+m_{r+1-i}=h → cos-cancellation. **Closed analytically by theorem.**
 22. **Part XV (Blind search V(φ)):** 50,000 random weight vectors for V=Σwᵢφ^(2mᵢ/h). Zero winners in Planck 1σ band [0.960,0.969] for any algebra. Systematic bias: n_s(E8)=0.975±0.004, offset +2.4σ above Planck. Modified forms (Starobinsky× Coxeter, hilltop, axion-like): E8 wins 0.16% vs random 0.68%. **H₀ holds.**
 23. **Part XVI (Cartan matrix dynamics):** Replaced standard map with Hamiltonian H=Σpᵢ²/2+ΣCᵢⱼ cos(φᵢ−φⱼ). Key property: det(C_E8)=1, min_eig=0.011 (near-critical). Phase spread_rate E8=0.0020 vs random 0.0015±0.0023 at κ=1.0; p=0.15. PC1 growth 0.004/window → 3.85 e-folds per 10⁵ steps (need >60). **H₀ holds.**
+24. **Part XVII (Mutual Information):** Step 1 showed TC(E8)=13.64 vs random=0.44, p=0.000 — apparent massive signal. Step 2 with structure-matched controls: 98.9% of TC from Weyl-paired modes (ωᵢ=ωⱼ).
+Control B/C (Weyl-paired random): p=0.78. **Artifact #10: Weyl pairing creates spurious MI signal.**
+
 
 ---
 
@@ -207,7 +234,32 @@ p_corrected = p_raw * n_algebras_tested
 # 9. Single control seed artifact:
 # seed=999 gave rand_ff=0.500 vs true mean 0.184
 # Always run N>=100 controls before claiming signal
-   
+
+| # | Name | Part | Fix |
+|---|------|------|-----|
+| 1 | Dissipative D_KY | I | Use symplectic integrator |
+| 2 | Wrong distance matrix | VIII→IX | C_dist not A_weights |
+| 3 | PCA_ratio Weyl artifact | IX | Match n_unique |
+| 4 | Rank-mismatched control | XII | rank-matched always |
+| 5 | Single seed inflation | XII | N≥100 controls |
+| 6 | Auto-SIGNAL without Bonferroni | XV | p×n_tests |
+| 7 | n_s bias in power-law V | XV | Check min exponent |
+| 8 | G2 trivial resonance | XIII | Check n_unique=1 |
+| 9 | Σcos=0 hidden theorem | XIV | Verify analytically |
+| 10 | MI Weyl pairing artifact | XVII | Structure-matched ctrl |
+
+---
+
+## Six Mathematical Theorems Found
+
+```
+1. mᵢ+m_{r+1-i}=h → ωᵢ=ω_{r+1-i} (Weyl involution)
+2. Σcos(πmᵢ/h)=0 for all Coxeter groups
+3. det(C_E8)=1 (unimodular Cartan matrix)
+4. |Δ(h)|<1 → critical XXZ phase (Bethe ansatz)
+5. Spec(Cay(W,S))=character table (Peter-Weyl)
+6. TC(Coxeter)=n_Weyl_pairs × H_max (MI tautology)
+```
 
 ## Recommended Reading Order
 
@@ -240,6 +292,7 @@ monostring-hypothesis/
 │   └── monostring_part9_falsification.md        
 │   └── monostring_part10_cayley_spinchain.md     
 │   └── monostring_parts12_16_inflation.md
+│   └── monostring_part17_mutual_information.md
 │
 ├── scripts/
 │   ├── part1/                    # v0–v7 (Lyapunov, symplectic)
@@ -278,6 +331,9 @@ monostring-hypothesis/
 │       ├── part15_blind_search.py
 │       ├── part15_step2_modified.py
 │       └── part16_cartan.py
+│   └── part17/
+│       ├── part17_step1_mutual_info.py
+│       └── part17_step2_weyl_control.py
 │
 ├── figures/
 │   ├── part1/
@@ -412,7 +468,7 @@ with Temperley-Lieb structure (X-B).
 | XXZ Coxeter Δ as special | X-B | \|Δ(h)\|<1 → critical by theorem |
 | Dynkin-weighted spin chain | X-B | gap=0 for all configs |
 
-## Open Directions
+## Open Directions 
 
 The classical monostring hypothesis is falsified across:
 - Standard map orbits (Parts I–IX)
@@ -474,15 +530,15 @@ Expected runtime: ~5 minutes.
 ```bibtex
 @misc{lebedev2025monostring,
   author       = {Lebedev, Igor},
-  title        = {The Monostring Hypothesis: Sixteen
+  title        = {The Monostring Hypothesis: Seventeen
                   Computational Experiments Across Six
                   Mathematical Frameworks},
   year         = {2025},
   publisher    = {GitHub / Zenodo},
   url          = {https://github.com/LebedevIV/monostring-hypothesis},
   doi          = {10.5281/zenodo.18886047},
-  note         = {v12.0.0: Complete falsification including
-                  inflation search (Parts XII-XVI).}
+  note         = {v13.0.0: Complete. 17 experiments,
+                  0 signals, 6 theorems, 10 artifacts.}
 }
 ```
 ---
@@ -519,4 +575,4 @@ Paper and documentation: CC-BY 4.0 | Code: MIT
 
 **AI collaborators:**
 - Google Gemini 3.1 Pro — initial implementation (Part I v0)
-- Anthropic Claude (Opus, Sonnet 3.5/3.7, Sonnet 4) — critical analysis, falsification, Parts I–XVI
+- Anthropic Claude (Opus, Sonnet 4.6) — critical analysis, falsification, Parts I–XVII
