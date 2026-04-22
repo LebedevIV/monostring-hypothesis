@@ -545,16 +545,16 @@ Expected runtime: ~5 minutes.
 
 ```bibtex
 @misc{lebedev2025monostring,
-  author       = {Lebedev, Igor},
-  title        = {The Monostring Hypothesis: Seventeen
-                  Computational Experiments Across Six
-                  Mathematical Frameworks},
-  year         = {2025},
-  publisher    = {GitHub / Zenodo},
-  url          = {https://github.com/LebedevIV/monostring-hypothesis},
-  doi          = {10.5281/zenodo.18886047},
-  note         = {v13.0.0: Complete. 17 experiments,
-                  0 signals, 6 theorems, 10 artifacts.}
+  author    = {Lebedev, Igor},
+  title     = {The Monostring Hypothesis: Nineteen
+               Computational Experiments Across Seven
+               Mathematical Frameworks — Complete Falsification},
+  year      = {2025},
+  publisher = {GitHub / Zenodo},
+  url       = {https://github.com/LebedevIV/monostring-hypothesis},
+  doi       = {10.5281/zenodo.18886047},
+  note      = {v14.0.0: Complete. 19 experiments,
+               0 signals, 6 theorems, 11 artifacts.}
 }
 ```
 ---
