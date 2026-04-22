@@ -29,8 +29,9 @@
 | XV | Blind search: inflation potentials V(φ | ❌ **n_s systematically +2.4σ above Planck** |
 | XVI | Cartan matrix dynamics | ❌ **p=0.15; E8 ≈ random matrices** |
 | XVII | Mutual information | ❌ **98.9% Weyl artifact** |
-| **XVIII** | **Quantum E8 root lattice** | ❌ **n_s artifacts (Steps 1-2)** |
-| **XIX** | **Quantum Bogoliubov spectrum** | ❌ **Artifact #11 (Steps 3-8)** |
+| XVIII | Quantum E8 root lattice | ❌ **n_s artifacts (Steps 1-2)** |
+| XIX | Quantum Bogoliubov spectrum | ❌ **Artifact #11 (Steps 3-8)** |
+| **XX** | **FRW inflaton + Theorem 7** | ❌ **|η|≥1 always (analytic)** |
 
 ---
 
