@@ -266,6 +266,7 @@ p_corrected = p_raw * n_algebras_tested
 4. |Δ(h)|<1 → critical XXZ phase (Bethe ansatz)
 5. Spec(Cay(W,S))=character table (Peter-Weyl)
 6. TC(Coxeter)=n_Weyl_pairs × H_max (MI tautology)
+7. Cosine no-inflation theorem: V = Σ Cᵢⱼ·cos(φᵢ−φⱼ) → |η| = M_pl² ≥ 1 → slow-roll impossible for any Coxeter potential
 ```
 
 ## Recommended Reading Order
