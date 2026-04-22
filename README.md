@@ -28,17 +28,19 @@
 | XIV | Complex Coxeter frequencies ω+iΓ | ❌ **Σcos(πmᵢ/h)=0 by theorem** |
 | XV | Blind search: inflation potentials V(φ | ❌ **n_s systematically +2.4σ above Planck** |
 | XVI | Cartan matrix dynamics | ❌ **p=0.15; E8 ≈ random matrices** |
-| **XVII** | **Mutual information** | ❌ **98.9% Weyl artifact** |
+| XVII | Mutual information | ❌ **98.9% Weyl artifact** |
+| **XVIII** | **Quantum E8 root lattice** | ❌ **n_s artifacts (Steps 1-2)** |
+| **XIX** | **Quantum Bogoliubov spectrum** | ❌ **Artifact #11 (Steps 3-8)** |
 
 ---
 
 ## Final Scorecard
 
 ```
-17 experiments    →  0 surviving physical signals
-6 frameworks      →  all falsified
-6 theorems found  →  valid mathematics
-10 artifacts      →  documented and explained
+    19 experiments  →  0 surviving physical signals
+     7 frameworks   →  all falsified
+     6 theorems     →  valid mathematics
+    11 artifacts    →  documented and explained
 ```
 
 ### What survives
@@ -122,8 +124,10 @@ All surviving results are mathematical theorems or reproducible observations wit
   No distinction between E6, A6, E8, or random |Δ| < 1.
 - **Dynkin-weighted spin chain:** gap = 0 for all
   coupling patterns at Δ(E6); no Dynkin-specific signal.
-
-  *(Parts I–XI — see v11.0.0 for details)*
+- **Quantum inflation from E8:** classical and quadratic-quantum
+  E8 dynamics cannot produce n_s ≈ 0.965 (Parts XVIII-XIX)
+- **Coxeter-specific quantum gap:** gap structure explained
+  by rank and sparsity, not Lie algebra (Artifact #11)
 
 **New in Parts XII–XVI:**
 
@@ -199,10 +203,11 @@ These were found *during* falsification attempts:
 5. Spectral tautology:
    Spectrum(Cay(W, S)) = character table of W
    → Peter-Weyl theorem; no new physics content
+   
 
 ---
 
-## Artifact Catalog (complete)
+## Artifact Catalog
 
 # 1. Always use toric embedding:
 X = np.concatenate([np.cos(orbit), np.sin(orbit)], axis=1)
@@ -247,6 +252,7 @@ p_corrected = p_raw * n_algebras_tested
 | 8 | G2 trivial resonance | XIII | Check n_unique=1 |
 | 9 | Σcos=0 hidden theorem | XIV | Verify analytically |
 | 10 | MI Weyl pairing artifact | XVII | Structure-matched ctrl |
+| 11 | Control matrix mismatch | XIX | Match diag/sparsity/sign |
 
 ---
 
@@ -276,6 +282,7 @@ p_corrected = p_raw * n_algebras_tested
 | 9 | [Part IX — Final Falsification](paper/monostring_part9_falsification.md) | Artifact identification, PCA_ratio mechanism, complete scorecard |
 | 9 | [Part IX — Final Falsification](paper/monostring_part9_falsification.md) | Artifact identification, PCA_ratio mechanism, complete scorecard |
 | 10 | [Part X — Cayley Graphs and Spin Chains](paper/monostring_part10_cayley_spinchain.md) | Group theory and quantum physics tests; final negative result |
+| 11 | [Parts XVIII-XIX — Quantum Spectrum](paper/monostring_parts18_19_quantum.md) | Quantum falsification + Artifact #11 |
 
 ---
 
@@ -334,6 +341,15 @@ monostring-hypothesis/
 │   └── part17/
 │       ├── part17_step1_mutual_info.py
 │       └── part17_step2_weyl_control.py
+│   └── parts18_19/
+│       ├── part18_step1_temporal_spectrum.py
+│       ├── part18_step2_spatial_spectrum.py
+│       ├── part19_step3_fock_truncation.py
+│       ├── part19_step4_bogoliubov_exact.py
+│       ├── part19_step5_stable_regime.py
+│       ├── part19_step6_artifact_check.py
+│       ├── part19_step7_sparsity_control.py
+│       └── part19_step8_final_documentation.py
 │
 ├── figures/
 │   ├── part1/
