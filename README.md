@@ -83,6 +83,9 @@
 | Σcos(πmᵢ/h) = 0 for all Coxeter | XIV | Weyl involution theorem |
 | det(C_E8) = 1 (unimodular) | XVI | Exact: min_eig=0.011 |
 | n_s(Coxeter V~φ^α) > Planck | XV | +2.4σ systematic bias |
+| Stochastic BЭ ≡ Euclidean KG field (theorem) | XXI | Metropolis detailed balance → P[φ]~exp(-S/T) |
+| Lattice slope = -1.88 (not -2.00): lattice artifact | XXI | Exact: sin(πf)≠πf at f>0.08 |
+| CMB gap: |slope_KG - (n_s-1)| = 1.85 | XXI | Fundamental, not artifact |
 
 | Finding | Part | Type |
 |---------|------|------|
@@ -131,6 +134,13 @@ All surviving results are mathematical theorems or reproducible observations wit
   E8 dynamics cannot produce n_s ≈ 0.965 (Parts XVIII-XIX)
 - **Coxeter-specific quantum gap:** gap structure explained
   by rank and sparsity, not Lie algebra (Artifact #11)
+- **Stochastic BЭ → CMB spectrum:** KG lattice gives slope≈-1.88; 
+  Planck observes n_s-1=-0.035. Gap=1.85, fundamental.
+- **Metropolis order matters for spectrum:** all three traversal orders
+  (random/sequential/checkerboard) give slope≈-1.83 with identical
+  correlation length l_corr=1/m. Order is irrelevant.
+- **slope→-2 on lattice:** discrete Laplacian gives sin(πf)≠πf at f>0.08;
+  true slope=-2.000 only in continuum limit a→0.
 
 **New in Parts XII–XVI:**
 
@@ -174,7 +184,7 @@ All surviving results are mathematical theorems or reproducible observations wit
 23. **Part XVI (Cartan matrix dynamics):** Replaced standard map with Hamiltonian H=Σpᵢ²/2+ΣCᵢⱼ cos(φᵢ−φⱼ). Key property: det(C_E8)=1, min_eig=0.011 (near-critical). Phase spread_rate E8=0.0020 vs random 0.0015±0.0023 at κ=1.0; p=0.15. PC1 growth 0.004/window → 3.85 e-folds per 10⁵ steps (need >60). **H₀ holds.**
 24. **Part XVII (Mutual Information):** Step 1 showed TC(E8)=13.64 vs random=0.44, p=0.000 — apparent massive signal. Step 2 with structure-matched controls: 98.9% of TC from Weyl-paired modes (ωᵢ=ωⱼ).
 Control B/C (Weyl-paired random): p=0.78. **Artifact #10: Weyl pairing creates spurious MI signal.**
-
+25. **Part XXI (Stochastic BЭ):** Modeled BЭ as Metropolis MC on 1D KG lattice. Steps 1-7: white noise → local coupling → detailed balance → exact KG configurations. Result: MC≡KG by theorem (detailed balance). Correlation length exact. Spectral slope=-1.88 (not -2.00): lattice artifact from sin(πf)≠πf. CMB gap (1.85) fundamental. **BЭ ≡ Euclidean QFT reinterpretation, zero new predictions.**
 
 ---
 
@@ -257,6 +267,7 @@ p_corrected = p_raw * n_algebras_tested
 | 10 | MI Weyl pairing artifact | XVII | Structure-matched ctrl |
 | 11 | Control matrix mismatch | XIX | Match diag/sparsity/sign |
 
+
 ---
 
 ## Six Mathematical Theorems Found
@@ -287,6 +298,7 @@ p_corrected = p_raw * n_algebras_tested
 | 9 | [Part IX — Final Falsification](paper/monostring_part9_falsification.md) | Artifact identification, PCA_ratio mechanism, complete scorecard |
 | 10 | [Part X — Cayley Graphs and Spin Chains](paper/monostring_part10_cayley_spinchain.md) | Group theory and quantum physics tests; final negative result |
 | 11 | [Parts XVIII-XIX — Quantum Spectrum](paper/monostring_parts18_19_quantum.md) | Quantum falsification + Artifact #11 |
+| 12 | [Part XXI — Stochastic BЭ](paper/monostring_part21_stochastic.md) | MC≡KG theorem; lattice slope; CMB gap |
 
 ---
 
@@ -557,8 +569,9 @@ Expected runtime: ~5 minutes.
   publisher = {GitHub / Zenodo},
   url       = {https://github.com/LebedevIV/monostring-hypothesis},
   doi       = {10.5281/zenodo.18886047},
-  note      = {v14.0.0: Complete. 19 experiments,
-               0 signals, 6 theorems, 11 artifacts.}
+  note      = {v15.0.0: Complete. 21 experiments,
+               0 signals, 6 theorems, 11 artifacts,
+               1 reinterpretation.}
 }
 ```
 ---
