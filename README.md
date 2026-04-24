@@ -31,17 +31,19 @@
 | XVII | Mutual information | ❌ **98.9% Weyl artifact** |
 | XVIII | Quantum E8 root lattice | ❌ **n_s artifacts (Steps 1-2)** |
 | XIX | Quantum Bogoliubov spectrum | ❌ **Artifact #11 (Steps 3-8)** |
-| **XX** | **FRW inflaton + Theorem 7** | ❌ **|η|≥1 always (analytic)** |
+| XX | FRW inflaton + Theorem 7 | ❌ **|η|≥1 always (analytic)** |
+| XXI | Stochastic realization: Metropolis MC as BЭ model | ⚠️ **Equivalent to QFT path integral (theorem)** |
 
 ---
 
 ## Final Scorecard
 
 ```
-    19 experiments  →  0 surviving physical signals
-     7 frameworks   →  all falsified
-     6 theorems     →  valid mathematics
-    11 artifacts    →  documented and explained
+21 experiments  →  0 surviving physical signals
+ 8 frameworks   →  all falsified
+ 6 theorems     →  valid mathematics
+11 artifacts    →  documented and explained
+ 1 reinterpretation → BЭ ≡ Euclidean QFT (path integral)
 ```
 
 ### What survives
