@@ -14,7 +14,7 @@
 | I | Dimensional reduction (Lyapunov compactification) | ❌ **Falsified** (symplectic test) |
 | II | Gauge Higgs mechanism + causal sets | ❌ **Trivial** (null model) |
 | III | Spectral dimension (Weyl law) | ⚠️ Real effect, d_s ≠ 4.0 |
-| IV | Independent verification (graph cosmology) | ❌ d_s depends on N; dark energy circular |
+| IV | Independent verification (graph cosmology) | ❌ d_s depends on N |
 | V | Resolution (D_corr vs d_s) | ❌ **D_corr(E₆)≈3.02 is 3D artifact** |
 | VI | Fragmentation & Memory Time | ⚠️ **τ≈237 survives (p<0.0001)** |
 | VII | τ ∝ h(Coxeter) cross-algebra test | ❌ **Falsified** (9 experiments) |
@@ -23,27 +23,30 @@
 | X-A | Cayley graphs of Coxeter groups | ❌ **Tautology** (character table) |
 | X-B | XXZ spin chain with Coxeter parameters | ❌ **Critical phase by theorem** |
 | XI | Quantum walk on Cayley graph of S₄ | ⚠️ p=0.065; mechanism trivial |
-| XII | Emergent inflaton V_eff from mode interactions | ❌ **p>0.3 at all κ (N=200 controls)** |
-| XIII | KAM thresholds κ_c(algebra | ❌ **r(h,κ_c)=−0.47; H₀ holds** |
+| XII | Emergent inflaton V_eff from mode interactions | ❌ **p>0.3 at all κ** |
+| XIII | KAM thresholds κ_c(algebra) | ❌ **r(h,κ_c)=−0.47; H₀ holds** |
 | XIV | Complex Coxeter frequencies ω+iΓ | ❌ **Σcos(πmᵢ/h)=0 by theorem** |
-| XV | Blind search: inflation potentials V(φ | ❌ **n_s systematically +2.4σ above Planck** |
+| XV | Blind search: inflation potentials V(φ) | ❌ **n_s systematically +2.4σ above Planck** |
 | XVI | Cartan matrix dynamics | ❌ **p=0.15; E8 ≈ random matrices** |
 | XVII | Mutual information | ❌ **98.9% Weyl artifact** |
-| XVIII | Quantum E8 root lattice | ❌ **n_s artifacts (Steps 1-2)** |
-| XIX | Quantum Bogoliubov spectrum | ❌ **Artifact #11 (Steps 3-8)** |
-| XX | FRW inflaton + Theorem 7 | ❌ **|η|≥1 always (analytic)** |
-| XXI | Stochastic realization: Metropolis MC as BЭ model | ⚠️ **Equivalent to QFT path integral (theorem)** |
+| XVIII | Quantum E8 root lattice | ❌ **n_s artifacts** |
+| XIX | Quantum Bogoliubov spectrum | ❌ **Artifact #11** |
+| XX | FRW inflaton + Theorem 7 | ❌ **\|η\|≥1 always (analytic)** |
+| XXI | Stochastic BЭ: Metropolis MC as monostring | ⚠️ **BЭ ≡ Euclidean QFT (theorem); lattice slope=-1.88** |
+| **XXII** | **Three observational tests: BH→DE, LIV, Holography** | ⚠️ **1 live prediction: w(z)≠-1 consistent with DESI 2024** |
+
 
 ---
 
 ## Final Scorecard
 
 ```
-21 experiments  →  0 surviving physical signals
- 8 frameworks   →  all falsified
- 6 theorems     →  valid mathematics
-11 artifacts    →  documented and explained
- 1 reinterpretation → BЭ ≡ Euclidean QFT (path integral)
+    22 experiments  →  0 confirmed signals, 1 live prediction
+     8 frameworks   →  all tested
+     6 theorems     →  valid mathematics
+    13 artifacts    →  documented and explained
+     1 reinterpretation → BЭ ≡ Euclidean QFT (path integral)
+     1 live test    →  DESI Y5 / Euclid 2026-2027
 ```
 
 ### What survives
@@ -67,7 +70,7 @@
   an empirical discovery.
   
 
-## What Survives (complete list)
+## What Survives
 
 | Finding | Part | Evidence |
 |---------|------|----------|
@@ -89,14 +92,24 @@
 
 | Finding | Part | Type |
 |---------|------|------|
-| τ≈237 for E6 daughters (p<0.0001) | VI | Empirical |
+| D_corr(E₆) ≈ 3.02 (quasi-3D orbit) | V, VI | Empirical |
+| D_corr depends on Set, not Order | VI | Empirical |
+| Memory Time τ ≈ 237 (p<0.0001) | VI | Empirical |
+| Arrow of Time via Fragmentation | VI | Empirical |
 | Diffusive wavepackets α≈0.30 | VIII | Empirical |
+| Monotonic IPR gradient E6 ρ=1.0 | VIII | Empirical |
 | Weyl involution: mᵢ+m_{r+1-i}=h | IX | Theorem |
 | Σcos(πmᵢ/h)=0 all Coxeter | XIV | Theorem |
 | det(C_E8)=1, min_eig=0.011 | XVI | Theorem |
 | \|Δ(h)\|<1 → critical XXZ | X-B | Theorem |
 | Spec(Cay(W))=character table | X-A | Theorem |
 | TC(Coxeter)=n_pairs×H_max | XVII | Theorem |
+| BЭ(MC) ≡ Euclidean KG QFT | XXI | Theorem |
+| Lattice slope=-1.885 (sin artifact) | XXI | Empirical |
+| CMB gap = 1.85 (fundamental) | XXI | Analytic |
+| **BH→DE: w(z)≠-1 consistent (DESI)** | **XXII** | **Live prediction** |
+| LIV: covariant BЭ consistent | XXII | Observational |
+| Holographic bound: consistent | XXII | Observational |
 
 All surviving results are mathematical theorems or reproducible observations without physical interpretation as emergent spacetime or inflation.
 
@@ -152,7 +165,48 @@ All surviving results are mathematical theorems or reproducible observations wit
 | Coxeter potential V~φ^(2m/h) → Planck n_s | XV | n_s=0.975±0.004 vs Planck 0.965 |
 | Starobinsky×Coxeter corrections | XV | 0.16% winners < 0.68% random |
 | Cartan matrix H gives inflation | XVI | p=0.15; spread_rate E8≈random |
+| slope→-2 on discrete lattice | XXI | sin(πf)≠πf; max=-1.885 |
+| KG statistics → CMB spectrum | XXI | gap=1.85, fundamental |
+| Observable (LIV) Planck cycle | XXII | M_QG>1.22M_Pl (Fermi) |
+| Direct ρ_BH = ρ_Λ | XXII | ratio=7.67×10⁻⁷ |
+| Preon/compositeness below 10 TeV | XXII | LHC contact interaction bounds |
   
+---
+
+## The Live Prediction
+
+PREDICTION (Part XXII, Test 1):
+
+  BЭ hypothesis: black holes are regions of zero
+  degrees of freedom. Their growth forces the
+  external state network to expand → observed
+  as time-varying dark energy with w(z) ≠ -1.
+
+  Mechanism: qualitatively analogous to
+  Farrah et al. 2023 (Nature Astronomy) and
+  cosmological coupling M_BH ∝ a^k.
+
+CURRENT STATUS (July 2025):
+  DESI 2024 (arXiv:2404.03002):
+  w0 = -0.55 ± 0.39, wa = -1.32 ± 0.60
+  Tension with ΛCDM: ~3.9σ (DESI+CMB+Union3)
+
+  BЭ prediction: w(z) ≠ -1 during BH growth
+  epoch (z ~ 1-3). CONSISTENT with DESI 2024.
+
+UPCOMING TESTS:
+  DESI Year 5 (2026): σ(w0,wa) reduced by ~2×
+  Euclid DR1 (2026): independent BAO+WL
+  Roman Space Telescope (2027+): SNe Ia
+  
+  If w(z) ≠ -1 confirmed at >5σ: 
+    BЭ BH→DE mechanism strengthened.
+  If w → -1 in future data:
+    BЭ BH→DE mechanism ruled out.
+    
+  This is the only remaining falsifiable
+  frontier of the monostring hypothesis
+  accessible to current/near-future instruments.
 
 ---
 
@@ -184,7 +238,13 @@ All surviving results are mathematical theorems or reproducible observations wit
 23. **Part XVI (Cartan matrix dynamics):** Replaced standard map with Hamiltonian H=Σpᵢ²/2+ΣCᵢⱼ cos(φᵢ−φⱼ). Key property: det(C_E8)=1, min_eig=0.011 (near-critical). Phase spread_rate E8=0.0020 vs random 0.0015±0.0023 at κ=1.0; p=0.15. PC1 growth 0.004/window → 3.85 e-folds per 10⁵ steps (need >60). **H₀ holds.**
 24. **Part XVII (Mutual Information):** Step 1 showed TC(E8)=13.64 vs random=0.44, p=0.000 — apparent massive signal. Step 2 with structure-matched controls: 98.9% of TC from Weyl-paired modes (ωᵢ=ωⱼ).
 Control B/C (Weyl-paired random): p=0.78. **Artifact #10: Weyl pairing creates spurious MI signal.**
-25. **Part XXI (Stochastic BЭ):** Modeled BЭ as Metropolis MC on 1D KG lattice. Steps 1-7: white noise → local coupling → detailed balance → exact KG configurations. Result: MC≡KG by theorem (detailed balance). Correlation length exact. Spectral slope=-1.88 (not -2.00): lattice artifact from sin(πf)≠πf. CMB gap (1.85) fundamental. **BЭ ≡ Euclidean QFT reinterpretation, zero new predictions.**
+25. **Part XXI (Stochastic BЭ):** Metropolis MC with detailed balance → P[φ]~exp(-S/T) = Euclidean path integral. BЭ(MC) ≡ KG QFT by theorem. Lattice slope = -1.885 (not -2.000): sin(πf)≠πf artifact. CMB gap = 1.85, fundamental. **Zero new predictions.**
+26. **Part XXII (Observational tests):** Three predictions tested against real data.
+    - LIV: covariant BЭ consistent with Fermi M_QG>1.22M_Pl.
+    - Holography: finite state space consistent with Bekenstein bound S_max = A/4l_P².
+    - **BH→DE: DESI 2024 w(z)≠-1 at 3.9σ is qualitatively consistent with BЭ prediction that BH concentration drives space expansion.**
+    This is not confirmation. It is the first external data point not inconsistent with a BЭ prediction.
+    **Waiting for DESI Y5, Euclid, Roman (2026-2027).**
 
 ---
 
@@ -216,7 +276,10 @@ These were found *during* falsification attempts:
 5. Spectral tautology:
    Spectrum(Cay(W, S)) = character table of W
    → Peter-Weyl theorem; no new physics content
-   
+
+6. TC(Coxeter)=n_Weyl_pairs×H_max (MI tautology)
+7. |η|≥1 always (Cosine no-inflation theorem)
+8. BЭ(Metropolis) ≡ Euclidean QFT (detailed balance)
 
 ---
 
@@ -299,6 +362,8 @@ p_corrected = p_raw * n_algebras_tested
 | 10 | [Part X — Cayley Graphs and Spin Chains](paper/monostring_part10_cayley_spinchain.md) | Group theory and quantum physics tests; final negative result |
 | 11 | [Parts XVIII-XIX — Quantum Spectrum](paper/monostring_parts18_19_quantum.md) | Quantum falsification + Artifact #11 |
 | 12 | [Part XXI — Stochastic BЭ](paper/monostring_part21_stochastic.md) | MC≡KG theorem; lattice slope; CMB gap |
+| 13 | [Part XXII — Observational](paper/monostring_part22_observational.md) | Real data tests; live prediction |
+| 14 | [Philosophy](paper/monostring_philosophy_en.md) | Original ontological motivation |
 
 ---
 
@@ -316,6 +381,8 @@ monostring-hypothesis/
 │   └── monostring_part10_cayley_spinchain.md     
 │   └── monostring_parts12_16_inflation.md
 │   └── monostring_part17_mutual_information.md
+│   ├── monostring_part21_stochastic.md  
+│   └── monostring_part22_observational.md  
 │
 ├── scripts/
 │   ├── part1/                    # v0–v7 (Lyapunov, symplectic)
@@ -366,6 +433,18 @@ monostring-hypothesis/
 │       ├── part19_step6_artifact_check.py
 │       ├── part19_step7_sparsity_control.py
 │       └── part19_step8_final_documentation.py
+│   ├── part21/ 
+│   │   ├── part21_step1_simple_traversal.py
+│   │   ├── part21_step2_local_coupling.py
+│   │   ├── part21_step3_metropolis.py
+│   │   ├── part21_step4_convergence.py
+│   │   ├── part21_step5_exact_kg.py
+│   │   ├── part21_step6_uv_analysis.py
+│   │   ├── part21_step7_lattice_diagnostic.py
+│   │   └── part21_summary.py
+│   └── part22/ 
+│       ├── part22_observational_tests.py
+│       └── part22_summary.py
 │
 ├── figures/
 │   ├── part1/
@@ -377,6 +456,9 @@ monostring-hypothesis/
 │   └── part6/
 │       ├── monostring_part6_final_summary.png    # Part VI Scorecard
 │       └── monostring_fragmentation_v10.png      # Delta S(t) memory time
+│   ├── part21/                              (v15)
+│   └── part22/                             (v16)
+│       └── part22_observational_tests.png
 │
 ├── results/
 ├── README.md
@@ -553,6 +635,15 @@ python scripts/part9/part9_step2_diagnostic.py        # z_geo artifact
 python scripts/part9/part9_step4_mechanism.py         # PCA_ratio mechanism
 python scripts/part9/part9_step5_controlled_comparison.py  # final scorecard
 ```
+
+```bash
+# Part XXI (Stochastic BЭ — ~3 min):
+python scripts/part21/part21_summary.py
+
+# Part XXII (Observational tests — ~1 min):
+python scripts/part22/part22_observational_tests.py
+```
+
 Expected runtime: ~5 minutes.
 
 ---
@@ -562,16 +653,17 @@ Expected runtime: ~5 minutes.
 ```bibtex
 @misc{lebedev2025monostring,
   author    = {Lebedev, Igor},
-  title     = {The Monostring Hypothesis: Nineteen
-               Computational Experiments Across Seven
-               Mathematical Frameworks — Complete Falsification},
+  title     = {The Monostring Hypothesis: Twenty-Two
+               Computational and Observational Experiments ---
+               Complete Falsification of Classical Program,
+               One Live Prediction Awaiting DESI Y5},
   year      = {2025},
   publisher = {GitHub / Zenodo},
   url       = {https://github.com/LebedevIV/monostring-hypothesis},
   doi       = {10.5281/zenodo.18886047},
-  note      = {v15.0.0: Complete. 21 experiments,
-               0 signals, 6 theorems, 11 artifacts,
-               1 reinterpretation.}
+  note      = {v16.0.0: 22 experiments, 0 confirmed signals,
+               1 live prediction (BH→DE, DESI Y5),
+               8 theorems, 13 artifacts.}
 }
 ```
 ---
