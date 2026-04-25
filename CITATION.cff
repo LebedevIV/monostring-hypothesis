@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+authors:
+  - family-names: Lebedev
+    given-names: Igor
+title: >-
+  The Monostring Hypothesis: Twenty-Two Computational
+  and Observational Experiments — Complete Falsification
+  of Classical Program, One Live Prediction Awaiting DESI Y5
+version: 16.0.0
+date-released: 2025-07-22
+url: "https://github.com/LebedevIV/monostring-hypothesis"
+doi: 10.5281/zenodo.18886047
+license: CC-BY-4.0
+keywords:
+  - monostring hypothesis
+  - emergent spacetime
+  - falsification
+  - Coxeter groups
+  - E8
+  - dark energy
+  - DESI 2024
+  - holographic principle
+  - stochastic quantization
+  - quantum field theory
