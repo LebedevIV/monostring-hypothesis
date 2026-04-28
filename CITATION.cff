@@ -1,25 +1,35 @@
 cff-version: 1.2.0
-message: "If you use this work, please cite it as below."
+message: "If you use this work, please cite it."
 authors:
   - family-names: Lebedev
     given-names: Igor
 title: >-
-  The Monostring Hypothesis: Twenty-Two Computational
-  and Observational Experiments — Complete Falsification
-  of Classical Program, One Live Prediction Awaiting DESI Y5
-version: 16.0.0
-date-released: 2025-07-22
-url: "https://github.com/LebedevIV/monostring-hypothesis"
-doi: 10.5281/zenodo.18886047
+  The Monostring Hypothesis: Twenty-Three
+  Computational and Observational Experiments —
+  Complete Falsification of Classical Program,
+  One Live Prediction Awaiting DESI Y5
+version: 17.0.0
+date-released: 2025-07-XX
+url: https://github.com/LebedevIV/monostring-hypothesis
+repository-code: https://github.com/LebedevIV/monostring-hypothesis
 license: CC-BY-4.0
+abstract: >-
+  Twenty-three computational experiments across
+  seven mathematical frameworks testing the
+  monostring (single protoelement) hypothesis.
+  Zero confirmed physical signals. One live
+  prediction: w(z)≠-1 consistent with DESI 2024.
+  Nine mathematical theorems discovered during
+  falsification. Fourteen artifacts documented.
+  Part XXIII adds dynamical string fission via
+  DNLS modulational instability and sine-Gordon
+  topological solitons.
 keywords:
-  - monostring hypothesis
+  - monostring
+  - quantum gravity
   - emergent spacetime
+  - sine-Gordon
+  - topological solitons
   - falsification
-  - Coxeter groups
-  - E8
+  - DESI
   - dark energy
-  - DESI 2024
-  - holographic principle
-  - stochastic quantization
-  - quantum field theory
