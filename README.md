@@ -1,6 +1,6 @@
 # The Monostring Hypothesis
 
-**Seventeen Computational Experiments Across Six Mathematical Frameworks — Complete Falsification**
+****Twenty-Three Computational Experiments Across Seven Mathematical Frameworks — Complete Falsification****
 
 [![DOI: Paper](https://img.shields.io/badge/DOI-Paper%20(PDF)-blue.svg)](https://doi.org/10.5281/zenodo.18886047)
 [![DOI: Code](https://zenodo.org/badge/DOI/10.5281/zenodo.18890266.svg)](https://doi.org/10.5281/zenodo.18890266)
@@ -33,7 +33,8 @@
 | XIX | Quantum Bogoliubov spectrum | ❌ **Artifact #11** |
 | XX | FRW inflaton + Theorem 7 | ❌ **\|η\|≥1 always (analytic)** |
 | XXI | Stochastic BЭ: Metropolis MC as monostring | ⚠️ **BЭ ≡ Euclidean QFT (theorem); lattice slope=-1.88** |
-| **XXII** | **Three observational tests: BH→DE, LIV, Holography** | ⚠️ **1 live prediction: w(z)≠-1 consistent with DESI 2024** |
+| XXII | Three observational tests: BH→DE, LIV, Holography | ⚠️ **1 live prediction: w(z)≠-1 consistent with DESI 2024** |
+| XXIII | Sine-Gordon: topological solitons + DNLS fission | ⚠️ **Mixed** (2 confirmed, 2 falsified) |
 
 
 ---
@@ -41,10 +42,10 @@
 ## Final Scorecard
 
 ```
-    22 experiments  →  0 confirmed signals, 1 live prediction
-     8 frameworks   →  all tested
-     6 theorems     →  valid mathematics
-    13 artifacts    →  documented and explained
+    23 experiments  →  0 confirmed signals, 1 live prediction
+     7 frameworks   →  all tested
+     9 theorems     →  valid mathematics
+    14 artifacts    →  documented and explained
      1 reinterpretation → BЭ ≡ Euclidean QFT (path integral)
      1 live test    →  DESI Y5 / Euclid 2026-2027
 ```
@@ -107,9 +108,13 @@
 | BЭ(MC) ≡ Euclidean KG QFT | XXI | Theorem |
 | Lattice slope=-1.885 (sin artifact) | XXI | Empirical |
 | CMB gap = 1.85 (fundamental) | XXI | Analytic |
-| **BH→DE: w(z)≠-1 consistent (DESI)** | **XXII** | **Live prediction** |
+| BH→DE: w(z)≠-1 consistent (DESI) | XXII | Live prediction |
 | LIV: covariant BЭ consistent | XXII | Observational |
 | Holographic bound: consistent | XXII | Observational |
+| Artifact #12 resolved: pi_v = -v·dφ/dx | XXIII | Empirical |
+| SG breather masses <0.06% error (all ω) | XXIII | Numerical |
+| DNLS ONE→MANY: ~20 soliton equilibrium  | XXIII | Empirical |
+| Classical SG integrable → no bound states in head-on collision | XXIII | Theorem |
 
 All surviving results are mathematical theorems or reproducible observations without physical interpretation as emergent spacetime or inflation.
 
@@ -154,6 +159,13 @@ All surviving results are mathematical theorems or reproducible observations wit
   correlation length l_corr=1/m. Order is irrelevant.
 - **slope→-2 on lattice:** discrete Laplacian gives sin(πf)≠πf at f>0.08;
   true slope=-2.000 only in continuum limit a→0.
+- **Breather formation in classical SG head-on collision:**
+  integrable SG → exact 2-kink solution always
+  passes through. Bound states require non-integrable
+  models (double-SG, φ⁴) or quantum SG.
+- **Thermal kink nucleation at T~M:** at T≥M kinks
+  indistinguishable from thermal noise. No discrete
+  particle production from φ=0 in classical 1+1D SG.
 
 **New in Parts XII–XVI:**
 
@@ -280,6 +292,15 @@ These were found *during* falsification attempts:
 6. TC(Coxeter)=n_Weyl_pairs×H_max (MI tautology)
 7. |η|≥1 always (Cosine no-inflation theorem)
 8. BЭ(Metropolis) ≡ Euclidean QFT (detailed balance)
+9. SG integrability theorem:
+   Classical sine-Gordon is exactly integrable
+   (Zakharov-Shabat, 1972). Two-kink solution:
+   phi_KAK = 4·arctan(v·sinh(γx)/cosh(γvt))
+   → kinks always pass through in head-on collision.
+   Breathers in classical SG exist as exact solutions
+   but NOT as products of kink-antikink scattering.
+   Consequence: classical SG cannot model particle
+   creation from vacuum via collision.
 
 ---
 
@@ -329,7 +350,9 @@ p_corrected = p_raw * n_algebras_tested
 | 9 | Σcos=0 hidden theorem | XIV | Verify analytically |
 | 10 | MI Weyl pairing artifact | XVII | Structure-matched ctrl |
 | 11 | Control matrix mismatch | XIX | Match diag/sparsity/sign |
-
+| 12 | Moving kink momentum: pi=-v·γ·dφ/dx | XXIII | Remove γ: pi=-v·dφ/dx |
+| 13 | E_center false oscillation peak      | XXIII | Use proper energy density |
+| 14 | Euler-Cromer vs Störmer-Verlet       | XXIII | Use half-step integrator  |
 
 ---
 
@@ -364,6 +387,7 @@ p_corrected = p_raw * n_algebras_tested
 | 12 | [Part XXI — Stochastic BЭ](paper/monostring_part21_stochastic.md) | MC≡KG theorem; lattice slope; CMB gap |
 | 13 | [Part XXII — Observational](paper/monostring_part22_observational.md) | Real data tests; live prediction |
 | 14 | [Philosophy](paper/monostring_philosophy_en.md) | Original ontological motivation |
+| 15 | [Part XXIII — String Fission](paper/monostring_part23_string_fission.md) | DNLS soliton gas + SG topology; artifacts #12-14 |
 
 ---
 
@@ -383,6 +407,7 @@ monostring-hypothesis/
 │   └── monostring_part17_mutual_information.md
 │   ├── monostring_part21_stochastic.md  
 │   └── monostring_part22_observational.md  
+│   └── monostring_part23_string_fission.md
 │
 ├── scripts/
 │   ├── part1/                    # v0–v7 (Lyapunov, symplectic)
@@ -445,6 +470,11 @@ monostring-hypothesis/
 │   └── part22/ 
 │       ├── part22_observational_tests.py
 │       └── part22_summary.py
+│   └── part23/
+│       ├── part23_step1_dnls_fission.py
+│       ├── part23_step2_dnls_longterm.py
+│       ├── part23_step3_sine_gordon.py
+│       └── part23_final.py
 │
 ├── figures/
 │   ├── part1/
@@ -459,6 +489,14 @@ monostring-hypothesis/
 │   ├── part21/                              (v15)
 │   └── part22/                             (v16)
 │       └── part22_observational_tests.png
+│   └── part23/
+│       ├── part23_string_fission.png
+│       ├── part23_step2_dynamics.png
+│       ├── part23_step4_sine_gordon.png
+│       ├── part23_independent_verification.png
+│       ├── part23_final.png
+│       ├── part23_collisions.png
+│       └── part23_thermal_states.png
 │
 ├── results/
 ├── CITATION.cff
@@ -643,9 +681,14 @@ python scripts/part21/part21_summary.py
 
 # Part XXII (Observational tests — ~1 min):
 python scripts/part22/part22_observational_tests.py
+
 ```
 
-Expected runtime: ~5 minutes.
+**Part XXIII (Sine-Gordon final, GPU recommended):**
+```bash
+python scripts/part23/part23_final.py
+```
+Expected runtime: ~1 min (GPU T4), ~25 min (CPU)
 
 ---
 
@@ -662,9 +705,9 @@ Expected runtime: ~5 minutes.
   publisher = {GitHub / Zenodo},
   url       = {https://github.com/LebedevIV/monostring-hypothesis},
   doi       = {10.5281/zenodo.18886047},
-  note      = {v16.0.0: 22 experiments, 0 confirmed signals,
-               1 live prediction (BH→DE, DESI Y5),
-               8 theorems, 13 artifacts.}
+  note = {v17.0.0: 23 experiments, 0 confirmed signals,
+        1 live prediction (BH→DE, DESI Y5),
+        9 theorems, 14 artifacts.}
 }
 ```
 ---
