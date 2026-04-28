@@ -352,3 +352,22 @@ Honest verdict:
   integrability is broken and bound state
   production in collisions becomes possible.
 
+**Scripts**
+
+Script	Description
+part23_step1_dnls_fission.py	DNLS: ONE→MANY, soliton count
+part23_step2_dnls_longterm.py	DNLS: long-time, dissipation, 2-component
+part23_step3_sine_gordon.py	SG: kink/breather verification, collision
+part23_final.py	SG: complete test suite (GPU accelerated)
+
+**Figures**
+
+Figure	Content
+part23_string_fission.png	DNLS Step 1: density snapshots, soliton count
+part23_step2_dynamics.png	DNLS Step 2: dissipation, bound states
+part23_step4_sine_gordon.png	SG: kink profiles, breather spectrum
+part23_independent_verification.png	SG: artifact analysis
+part23_final.png	SG: complete scorecard
+part23_collisions.png	T3: E_center(t) for 9 velocities
+part23_thermal_states.png	T4: ρ_Q(x) at 5 temperatures
+
