@@ -270,6 +270,15 @@ Control B/C (Weyl-paired random): p=0.78. **Artifact #10: Weyl pairing creates s
     - **BH→DE: DESI 2024 w(z)≠-1 at 3.9σ is qualitatively consistent with BЭ prediction that BH concentration drives space expansion.**
     This is not confirmation. It is the first external data point not inconsistent with a BЭ prediction.
     **Waiting for DESI Y5, Euclid, Roman (2026-2027).**
+27. **Part XXIV (Double Sine-Gordon):** Classical SG falsified
+    in Part XXIII (integrable → elastic only). Double SG
+    V=1−r·cos(φ/2)−(1−r)·cos(φ) is non-integrable.
+    Result: 3/4 criteria confirmed. Wobble mode (internal DOF)
+    exists for all r. Critical velocity v_cr≈0.19: below it,
+    kink-antikink pairs form quasi-breathers lasting t>2000
+    with E_center=0.49. Resonance windows found at v>0.20.
+    Thermal nucleation fails: exp(−M/T)≈10⁻¹⁵ at T=0.5.
+    **First non-trivial particle-creation analog in BЭ framework.**
 
 ---
 
