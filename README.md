@@ -1,6 +1,6 @@
 # The Monostring Hypothesis
 
-****Twenty-Three Computational Experiments Across Seven Mathematical Frameworks — Complete Falsification****
+**Twenty-Four Computational Experiments Across Seven Mathematical Frameworks — Complete Falsification**
 
 [![DOI: Paper](https://img.shields.io/badge/DOI-Paper%20(PDF)-blue.svg)](https://doi.org/10.5281/zenodo.18886047)
 [![DOI: Code](https://zenodo.org/badge/DOI/10.5281/zenodo.18890266.svg)](https://doi.org/10.5281/zenodo.18890266)
@@ -35,20 +35,20 @@
 | XXI | Stochastic BЭ: Metropolis MC as monostring | ⚠️ **BЭ ≡ Euclidean QFT (theorem); lattice slope=-1.88** |
 | XXII | Three observational tests: BH→DE, LIV, Holography | ⚠️ **1 live prediction: w(z)≠-1 consistent with DESI 2024** |
 | XXIII | Sine-Gordon: topological solitons + DNLS fission | ⚠️ **Mixed** (2 confirmed, 2 falsified) |
+| **XXIV** | **Double Sine-Gordon: non-integrable kink collisions** | ⚠️ **3/4 CONFIRMED** (wobble mode, v_cr, resonance windows) |
 
 
 ---
 
 ## Final Scorecard
 
-```
-    23 experiments  →  0 confirmed signals, 1 live prediction
-     7 frameworks   →  all tested
-     9 theorems     →  valid mathematics
-    14 artifacts    →  documented and explained
-     1 reinterpretation → BЭ ≡ Euclidean QFT (path integral)
-     1 live test    →  DESI Y5 / Euclid 2026-2027
-```
+24 experiments  →  0 confirmed signals, 1 live prediction
+ 7 frameworks   →  all tested
+11 theorems     →  valid mathematics
+20 artifacts    →  documented and explained
+ 1 reinterpretation → BЭ ≡ Euclidean QFT (path integral)
+ 1 live test    →  DESI Y5 / Euclid 2026-2027
+
 
 ### What survives
 
@@ -114,7 +114,14 @@
 | Artifact #12 resolved: pi_v = -v·dφ/dx | XXIII | Empirical |
 | SG breather masses <0.06% error (all ω) | XXIII | Numerical |
 | DNLS ONE→MANY: ~20 soliton equilibrium  | XXIII | Empirical |
-| Classical SG integrable → no bound states in head-on collision | XXIII | Theorem |
+| Classical SG integrable → elastic scattering (no bound states) | XXIII | Theorem |
+| SG breather masses <0.06% error | XXIII | Numerical |
+| DNLS ONE→MANY: ~20 soliton equilibrium | XXIII | Empirical |
+| **Double SG wobble mode: ω_shape < M_vac (all r∈[0,1])** | **XXIV** | **Theorem** |
+| **Double SG v_cr ≈ 0.19: bound states form at v < v_cr** | **XXIV** | **Numerical** |
+| **Double SG resonance windows: N_bounces=2–5 at v>v_cr** | **XXIV** | **Numerical** |
+| **Bogomolny mass: M=∫√(2V)dφ, M≈16 for 0→4π kink** | **XXIV** | **Theorem** |
+| **Thermal nucleation suppressed: exp(−M/T)≈0 at T<<M** | **XXIV** | **Analytic** |
 
 All surviving results are mathematical theorems or reproducible observations without physical interpretation as emergent spacetime or inflation.
 
@@ -166,6 +173,12 @@ All surviving results are mathematical theorems or reproducible observations wit
 - **Thermal kink nucleation at T~M:** at T≥M kinks
   indistinguishable from thermal noise. No discrete
   particle production from φ=0 in classical 1+1D SG.
+- **Breather formation in head-on SG collision (confirmed Part XXIII):**
+  integrable SG → exact 2-kink solution passes through.
+  Double SG (non-integrable) DOES form bound states at v < v_cr.
+- **Thermal nucleation of double SG large kinks:**
+  M_kink ≈ 16 >> T_max = 5 → P ~ exp(−16/0.5) ≈ 3×10⁻¹⁵.
+  Exponentially suppressed. Not a model failure — thermodynamics.
 
 **New in Parts XII–XVI:**
 
@@ -297,10 +310,22 @@ These were found *during* falsification attempts:
    (Zakharov-Shabat, 1972). Two-kink solution:
    phi_KAK = 4·arctan(v·sinh(γx)/cosh(γvt))
    → kinks always pass through in head-on collision.
-   Breathers in classical SG exist as exact solutions
-   but NOT as products of kink-antikink scattering.
-   Consequence: classical SG cannot model particle
-   creation from vacuum via collision.
+
+10. Bogomolny mass formula (double SG):
+    M_kink(r) = ∫₀^{4π} √(2V(φ)) dφ
+    where V(φ) = 1 − r·cos(φ/2) − (1−r)·cos(φ)
+    M ≈ 16 ≈ 2×M_SG (double period 0→4π vs 0→2π)
+    Monotone in r; verified numerically to <0.1%.
+
+11. Wobble mode theorem (double SG):
+    Linearization around static kink gives
+    Schrödinger operator [−∂²ₓ + U(x)]η = ω²η
+    with U(x) = (r/4)cos(φ₀/2) + (1−r)cos(φ₀).
+    Discrete bound state ω_shape < M_vac exists
+    for all r ∈ [0,1]:
+      r=0.1: ω/M=0.227; r=0.5: ω/M=0.578; r=0.9: ω/M=0.935
+    This internal mode enables resonant energy transfer
+    during kink-antikink collisions → bound states.
 
 ---
 
@@ -353,6 +378,16 @@ p_corrected = p_raw * n_algebras_tested
 | 12 | Moving kink momentum: pi=-v·γ·dφ/dx | XXIII | Remove γ: pi=-v·dφ/dx |
 | 13 | E_center false oscillation peak      | XXIII | Use proper energy density |
 | 14 | Euler-Cromer vs Störmer-Verlet       | XXIII | Use half-step integrator  |
+| 15 | Superposition IC valid only at d>>ξ | XXIV | Verified sep0≈22>>ξ≈1.3 |
+| 16 | Bounce counter via φ=2π crossing | XXIV | Replaced by sep(t) detector |
+| 17 | Continuum mode vs discrete wobble | XXIV | Check ω stability vs grid size |
+| 18 | Free-field thermal IC ≠ interacting | XXIV | Order-of-magnitude estimate only |
+| 19 | N_bounces=0 (φ=2π detector) | XXIV | sep(t) threshold detector |
+| 20 | M_analytic=16 "wrong" | XXIV | Not a bug: 0→4π kink M≈2×M_SG |
+| 21 | AxisError thermal IC | XXIV | sigma_pi must be array(n_rfft,) |
+| 22 | IC Q=2 instead of Q=0 | XXIV | kink_profile_inverse() via x(φ) |
+| 23 | N_bounces≈50 (noise) | XXIV | Threshold count_bounces() |
+| 24 | sep_init=0.1 (kinks overlapping) | XXIV | Verified sep0≈22, Q=0 |
 
 ---
 
@@ -388,6 +423,7 @@ p_corrected = p_raw * n_algebras_tested
 | 13 | [Part XXII — Observational](paper/monostring_part22_observational.md) | Real data tests; live prediction |
 | 14 | [Philosophy](paper/monostring_philosophy_en.md) | Original ontological motivation |
 | 15 | [Part XXIII — String Fission](paper/monostring_part23_string_fission.md) | DNLS soliton gas + SG topology; artifacts #12-14 |
+| 16 | [Part XXIV — Double Sine-Gordon](paper/monostring_part24_double_sg.md) | Non-integrable kinks; wobble mode; 3/4 confirmed |
 
 ---
 
@@ -475,6 +511,8 @@ monostring-hypothesis/
 │       ├── part23_step2_dnls_longterm.py
 │       ├── part23_step3_sine_gordon.py
 │       └── part23_final.py
+│   └── part24/
+│       └── part24_double_sg_patch3.py
 │
 ├── figures/
 │   ├── part1/
@@ -497,6 +535,13 @@ monostring-hypothesis/
 │       ├── part23_final.png
 │       ├── part23_collisions.png
 │       └── part23_thermal_states.png
+│   └── part24/
+│       ├── ic_verification.png
+│       ├── ic_diagnosis.png
+│       ├── step2_wobble_modes.png
+│       ├── step3_patch3.png
+│       ├── step4_patch3.png
+│       └── step5_r_scan.png
 │
 ├── results/
 ├── CITATION.cff
@@ -688,8 +733,11 @@ python scripts/part22/part22_observational_tests.py
 ```bash
 python scripts/part23/part23_final.py
 ```
-Expected runtime: ~1 min (GPU T4), ~25 min (CPU)
 
+**Part XXIV (Double Sine-Gordon, GPU required):**
+```bash
+python scripts/part24/part24_double_sg_patch3.py
+```
 ---
 
 ## Citation
@@ -697,17 +745,19 @@ Expected runtime: ~1 min (GPU T4), ~25 min (CPU)
 ```bibtex
 @misc{lebedev2025monostring,
   author    = {Lebedev, Igor},
-  title     = {The Monostring Hypothesis: Twenty-Two
-               Computational and Observational Experiments ---
+  title     = {The Monostring Hypothesis: Twenty-Four
+               Computational Experiments ---
                Complete Falsification of Classical Program,
                One Live Prediction Awaiting DESI Y5},
   year      = {2025},
   publisher = {GitHub / Zenodo},
   url       = {https://github.com/LebedevIV/monostring-hypothesis},
   doi       = {10.5281/zenodo.18886047},
-  note = {v17.0.0: 23 experiments, 0 confirmed signals,
+  note = {v24.0.0: 24 experiments, 0 confirmed signals,
         1 live prediction (BH→DE, DESI Y5),
-        9 theorems, 14 artifacts.}
+        11 theorems, 20 artifacts.
+        Part XXIV: double SG non-integrable kinks,
+        3/4 criteria confirmed.}
 }
 ```
 ---
